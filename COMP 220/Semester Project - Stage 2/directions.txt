@@ -1,0 +1,1 @@
+Delete = Remove character Backspace = Disabled Enter = Disabled F1 = Undo F2 = Save (and go to next file) F3 = Save As (and go to next file) I spent about 30 hours on this project, and yes, this was a difficult but cool project to work on!

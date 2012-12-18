@@ -1,0 +1,42 @@
+COMMANDS:
+
+	help
+		Display this file
+	i <text>
+		Insert text
+	nl
+		Insert new line
+	x
+		Delete character
+	n
+		Undo last change to document
+	f
+		Go forward one character
+	b
+		Go back one character
+	l
+		Go down one line
+	-l
+		Go up one line
+	w
+		Go forward one word
+	-w
+		Go back one word
+	bol
+		Go to beginning of line
+	eol
+		Go to end of line
+	bof
+		Go to beginning of file
+	eof
+		Go to end of file
+	save
+		Save current file
+	save <filename>
+		Save current file under new name
+	dl
+		Delete the current line
+	dw
+		Delete the current word or next word if the cursor is on a space
+	exit
+		Save and exit the editor

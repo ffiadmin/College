@@ -1,0 +1,949 @@
+Magnitude	Region
+2.2	Southern Alaska
+1.6	Southern California
+1.4	Northern California
+1.3	Central Alaska
+2.3	Puerto Rico region
+1.3	Seattle-Tacoma urban area, Washington
+1.3	Northern California
+2.3	Portland urban area, Oregon
+4.8	offshore Guatemala
+1.7	Southern California
+1	Nevada
+1	Central California
+1.8	Southern California
+2.4	offshore Baja California, Mexico
+3	Dominican Republic region
+2	Island of Hawaii, Hawaii
+3.3	Southern Alaska
+1.7	Central California
+1.2	Southern California
+1.5	Mount St. Helens area, Washington
+1.1	Greater Los Angeles area, California
+5.3	near the east coast of Honshu, Japan
+2.1	Northern California
+1.2	Southern California
+1.6	Southern Alaska
+1.2	Southern California
+1.1	Washington
+1.6	Southern California
+1.7	Southern Alaska
+5.3	Pacific-Antarctic Ridge
+4.3	northern Peru
+1.1	Mount St. Helens area, Washington
+1.6	Central California
+3.1	Virgin Islands region
+2	Mount St. Helens area, Washington
+1.8	Central Alaska
+1.2	Long Valley area, California
+2.7	Southern California
+1.7	Southern California
+4.9	northwestern Iran
+2.1	Northern California
+1.1	Northern California
+4.4	offshore Guatemala
+1.6	Central Alaska
+1.5	Southern California
+1.8	Southern California
+2.2	Central Alaska
+1.6	Southern California
+2.3	Baja California, Mexico
+1.3	Southern California
+1.9	Central Alaska
+1.2	Northern California
+1.7	Northern California
+1.6	Nevada
+5.1	Antofagasta, Chile
+1.8	Northern California
+4.7	near the coast of central Peru
+4.4	south of the Fiji Islands
+2.1	British Columbia, Canada
+1	Southern California
+1.7	Central Alaska
+1.3	Oregon
+4.8	Tonga
+4.7	Sulawesi, Indonesia
+2.2	Island of Hawaii, Hawaii
+4.7	Tonga
+2.7	Baja California, Mexico
+1.4	Greater Los Angeles area, California
+2.4	Northern California
+4.8	offshore Valparaiso, Chile
+1.6	Central Alaska
+1	Central California
+2.5	Central California
+1.8	Northern California
+1	Northern California
+2	Northern California
+1.2	San Francisco Bay, California
+1.2	Central California
+1.6	Southern California
+2.2	Kodiak Island region, Alaska
+2.1	Southern California
+1.5	Oregon
+1.3	Central Alaska
+1.7	Southern California
+1	Northern California
+1.5	Nevada
+1.9	Central Alaska
+2.1	Central Alaska
+1.1	Nevada
+4.8	Bismarck Sea
+2.5	western Montana
+2.1	Central Alaska
+1.8	Southern Alaska
+1.6	Northern California
+1.8	Southern California
+1	Central California
+4.8	south of the Fiji Islands
+1.2	Southern California
+1	Greater Los Angeles area, California
+2.7	Puerto Rico region
+1.5	San Francisco Bay area, California
+1.1	Northern California
+1	Kenai Peninsula, Alaska
+1.2	Northern California
+1.4	Central California
+2.6	Southern Alaska
+1.9	Kodiak Island region, Alaska
+1.1	Central California
+1.3	Northern California
+1.1	Northern California
+3.7	Gulf of Alaska
+1.6	Southern Alaska
+2	Central California
+1.1	Central California
+5.6	Near Islands, Aleutian Islands, Alaska
+1.1	Southern California
+2.8	Kodiak Island region, Alaska
+4.3	offshore Chiapas, Mexico
+2.1	Central Alaska
+1	Southern California
+2.8	Kenai Peninsula, Alaska
+1.1	Long Valley area, California
+6	Guerrero, Mexico
+1.1	Long Valley area, California
+1.3	Long Valley area, California
+1.1	Central California
+1	Southern California
+5.7	Bismarck Sea
+4.8	offshore Guatemala
+1.1	Southern Alaska
+1	Long Valley area, California
+1.6	Southern California
+2.7	Alaska Peninsula
+1	Central California
+2.3	Southern California
+1	San Francisco Bay area, California
+4.9	offshore Guatemala
+1.7	Northern California
+1.5	Long Valley area, California
+4.9	Maug Islands region, Northern Mariana Islands
+1.2	Central California
+2	Southern California
+2	San Francisco Bay area, California
+2.3	Puerto Rico region
+1.8	Southern Alaska
+1.6	Northern California
+1.6	Strait of Juan de Fuca, Washington
+1.4	Southern California
+2.5	Southern Alaska
+1.1	Greater Los Angeles area, California
+1.5	Washington
+1.1	Central California
+1.4	Yellowstone National Park, Wyoming
+2.4	Central Alaska
+1.9	Northern California
+1.2	Washington
+2.2	Central California
+4.1	Caucasus region, Russia
+4.4	Bonin Islands, Japan region
+2.1	Oregon
+1.5	northern Alaska
+1.1	Southern California
+1	Southern California
+2.1	British Columbia, Canada
+4.2	Kyrgyzstan
+1.3	Southern Alaska
+2.2	British Columbia, Canada
+4	Xizang-Qinghai border region
+4.8	New Britain region, Papua New Guinea
+1	Southern California
+1	Northern California
+5.4	New Britain region, Papua New Guinea
+1	Southern California
+2.2	Island of Hawaii, Hawaii
+1.4	Central California
+1.1	Southern California
+1.3	Northern California
+1	Utah
+1.3	Northern California
+1	Southern California
+1	Puget Sound region, Washington
+1	San Francisco Bay area, California
+1.2	Washington
+1.4	Southern California
+6.1	Coquimbo, Chile
+2.4	Island of Hawaii, Hawaii
+1.6	Southern Alaska
+1.2	Southern California
+5.2	Fiji region
+1.2	Northern California
+1.2	Central California
+1	Southern California
+1.1	Long Valley area, California
+1.9	Central Alaska
+3.9	Andreanof Islands, Aleutian Islands, Alaska
+1.4	Central California
+1.3	Southern California
+1.3	Southern Alaska
+1.5	Central California
+3	Gulf of Alaska
+1.3	Central California
+1.9	Central California
+3.1	Gulf of Alaska
+1.8	Southern Yukon Territory, Canada
+1.1	Nevada
+1.5	Nevada
+3.1	Gulf of Alaska
+1.6	Central Alaska
+1.3	Central California
+2	Southern Alaska
+4.7	Sichuan-Yunnan border region, China
+4.5	Tonga
+1.8	Southern Alaska
+1.2	Central California
+1.1	Washington
+1.3	Central California
+1	Northern California
+1	Southern California
+2.2	Central California
+1.8	Southern California
+2	Central Alaska
+2	Kenai Peninsula, Alaska
+2	Island of Hawaii, Hawaii
+1.2	Central California
+1.6	Southern Alaska
+1.2	Southern California
+1.8	Southern Alaska
+4.8	Kermadec Islands region
+1.3	Northern California
+1.3	Nevada
+1.5	Central California
+1.2	Southern California
+1.4	Southern California
+2.2	Southern Alaska
+1.5	Greater Los Angeles area, California
+1.7	Southern California
+1.6	Southern Yukon Territory, Canada
+1.2	Long Valley area, California
+5.1	Tonga
+1	Seattle-Tacoma urban area, Washington
+1	Northern California
+4.7	eastern Mediterranean Sea
+2.6	Puerto Rico
+2.6	offshore Oregon
+1	Southern California
+2.3	Southern California
+1.3	Central California
+1.1	Southern California
+1.4	Northern California
+1.1	Southern California
+1.4	Southern California
+1.6	Southern California
+5.6	Negros, Philippines
+2	Island of Hawaii, Hawaii
+1	Southern California
+2.1	Southern Alaska
+1.7	Central California
+2.4	Gulf of Alaska
+1.9	Southern California
+3.1	Gulf of Alaska
+1.5	Long Valley area, California
+1.8	Northern California
+1.3	Northern California
+1.7	Nevada
+2.4	Southern Alaska
+2	Island of Hawaii, Hawaii
+1.9	Southern California
+4.7	Queen Charlotte Islands, Canada region
+1.7	Island of Hawaii, Hawaii
+1.6	Northern California
+1.1	Southern Alaska
+1	Northern California
+1.7	Southern Alaska
+3	Puerto Rico region
+2.8	Oregon
+4.6	Chiapas, Mexico
+2.1	Southern California
+1.7	Greater Los Angeles area, California
+1.7	Central Alaska
+4.3	Guatemala
+1.5	Nevada
+4.2	central Turkey
+4.8	Atacama, Chile
+4.5	central Turkey
+3.5	off the coast of Northern California
+4.5	Rat Islands, Aleutian Islands, Alaska
+1.9	Southern California
+4.6	Montenegro
+5.4	Tonga
+1.4	Greater Los Angeles area, California
+1.5	Central Alaska
+1.4	Kenai Peninsula, Alaska
+1.7	Greater Los Angeles area, California
+1.9	Central California
+1	Washington
+1.9	Southern California
+1.5	Southern California
+1.8	Greater Los Angeles area, California
+1.5	Southern California
+1.3	San Francisco Bay area, California
+1.3	Central Alaska
+1.4	Central California
+1.5	Northern California
+3.4	Gulf of Alaska
+1.7	Southern Alaska
+2.1	Southern Alaska
+2.4	Gulf of Alaska
+1.7	Mount St. Helens area, Washington
+1	Northern California
+1.2	Central California
+2	Southern Alaska
+1.3	Southern Alaska
+1	Long Valley area, California
+4.9	Myanmar
+1.1	Central Alaska
+1.4	Central California
+2.5	Gulf of Alaska
+1.7	Central California
+1.4	Central Alaska
+1.7	Central Alaska
+1	Northern California
+1.3	Central Alaska
+1.9	Southern Alaska
+2	Southern Alaska
+1.2	Southern California
+1.7	Southern Alaska
+1.6	Central California
+1.4	Central California
+1.6	Central Alaska
+1.1	Central Alaska
+2.9	Gulf of Alaska
+1.3	Central Alaska
+1.3	Southern California
+1.6	Baja California, Mexico
+1.6	Northern California
+1.1	Yellowstone National Park, Wyoming
+1.9	Northern California
+1.8	Central Alaska
+1.4	Southern California
+3.3	Northern California
+1.6	Southern California
+1.3	Central Alaska
+1	Northern California
+1.2	Southern California
+1.9	Central Alaska
+2.6	Gulf of Alaska
+1.5	Central Alaska
+2.3	Kenai Peninsula, Alaska
+1.3	Central Alaska
+1.2	Central California
+1.7	Central California
+4.3	Minahasa, Sulawesi, Indonesia
+1.8	Central California
+4.8	Tonga
+2.3	Washington
+4.6	southern Sumatra, Indonesia
+2.3	Virgin Islands region
+2.4	Virgin Islands region
+1.8	Gulf of Alaska
+1.1	Central California
+3.2	Andreanof Islands, Aleutian Islands, Alaska
+1.9	Long Valley area, California
+1.8	Central California
+1.9	Island of Hawaii, Hawaii
+1.2	Northern California
+1.8	Southern Alaska
+1.1	Central Alaska
+2	Southern Alaska
+2	Gulf of Alaska
+1.4	Central Alaska
+2.5	Gulf of Alaska
+1.8	Central California
+4.8	offshore Guatemala
+1.4	Central California
+1.8	Northern California
+2.7	Colorado
+2.6	Alaska Peninsula
+1.4	Northern California
+4.3	Queen Charlotte Islands, Canada region
+1.2	Northern California
+4.3	near the coast of Nicaragua
+4.4	Sicily, Italy
+1.9	Southern Alaska
+4.9	northern Mid-Atlantic Ridge
+1	Southern Alaska
+4.8	Papua, Indonesia
+1.8	Kenai Peninsula, Alaska
+4.8	northern Mid-Atlantic Ridge
+1.5	Central California
+1.6	Northern California
+1.1	Central California
+1.4	Utah
+4.8	offshore Guatemala
+1.4	Southern California
+1	Central Alaska
+5.1	Queen Charlotte Islands, Canada region
+1.1	Northern California
+6	off the coast of Aisen, Chile
+1	Southern California
+1.8	Northern California
+1.6	Northern California
+1.8	Northern California
+2.3	Southern California
+2.1	Washington
+1.4	Central California
+5	Tarapaca, Chile
+3.2	Gulf of Alaska
+1.1	Central California
+2.6	Central Alaska
+3.4	Gulf of Alaska
+1.6	Utah
+1.5	Central Alaska
+1.2	Central Alaska
+3.4	Gulf of Alaska
+5	off the coast of Ecuador
+1.4	Central Alaska
+4.8	Myanmar
+2	Southern California
+2	Central Alaska
+1.1	Southern California
+1.2	Northern California
+1	Central California
+1.8	Southern Alaska
+2	Southern Alaska
+1.2	Central California
+1	Greater Los Angeles area, California
+2.1	Southern Alaska
+2.9	Southern California
+4.2	Costa Rica
+1.2	Central Alaska
+1.8	Island of Hawaii, Hawaii
+3.9	Gulf of Alaska
+2.5	Gulf of Alaska
+2	Gulf of Alaska
+2.9	Gulf of Alaska
+1.2	Central Alaska
+3.5	Gulf of Alaska
+1.1	Nevada
+4.6	Montenegro
+4.8	Mid-Indian Ridge
+1.1	Southern Alaska
+1.7	Central Alaska
+3.3	Gulf of Alaska
+1.7	Central Alaska
+1.5	Gulf of Alaska
+3.3	Kodiak Island region, Alaska
+2.9	Gulf of Alaska
+4.3	Gulf of Alaska
+4.2	Gulf of Alaska
+1	Southern California
+3.4	Gulf of Alaska
+2.1	British Columbia, Canada
+1	Greater Los Angeles area, California
+3.4	Gulf of Alaska
+2	Central Alaska
+2.5	Gulf of Alaska
+1.2	San Francisco Bay area, California
+2.5	Gulf of Alaska
+3.2	Gulf of Alaska
+1.8	Central Alaska
+1.1	Southern California
+3.6	Gulf of Alaska
+2.7	Gulf of Alaska
+6.4	Gulf of Alaska
+2	Southern Alaska
+1.4	Central California
+1.2	Yellowstone National Park, Wyoming
+2.5	Southern Alaska
+2.3	Alaska Peninsula
+1.5	Washington
+1.3	Northern California
+1.4	Northern California
+1.7	Central Alaska
+1.2	Utah
+1.1	Central California
+1.5	Central California
+1.1	Central California
+1.6	Southeastern Alaska
+1.6	Greater Los Angeles area, California
+1.5	Central Alaska
+1.7	Central California
+1.5	Nevada
+2.6	Southern California
+1.3	Yellowstone National Park, Wyoming
+1	Washington
+1.1	Southern Alaska
+1.4	Central Alaska
+1.3	Central California
+2	Central Alaska
+1.6	Washington
+1.2	Northern California
+1	Washington
+1.7	Central Alaska
+1.2	Northern California
+1.7	Central California
+1.1	Central Alaska
+1.7	Northern California
+2.4	Southern Alaska
+1.3	Southern California
+1.9	Northern California
+1.3	Central Alaska
+5	Tonga
+5.3	south of the Fiji Islands
+2	Southern California
+1.7	Central California
+1.5	Central Alaska
+1.6	Greater Los Angeles area, California
+1.4	Southern California
+3.9	Andreanof Islands, Aleutian Islands, Alaska
+1.8	Southeastern Alaska
+2.9	southern Idaho
+1	Central Alaska
+2.7	Central California
+1.2	Central Alaska
+4.6	Sucre, Venezuela
+5	Izu Islands, Japan region
+4.7	off the coast of Aisen, Chile
+2.5	Utah
+5	south of the Fiji Islands
+1.2	Greater Los Angeles area, California
+2.3	Mona Passage, Puerto Rico
+1.5	Southeastern Alaska
+2.4	Central California
+4.5	Costa Rica
+1.9	Central California
+1.2	western Montana
+1.8	Kenai Peninsula, Alaska
+1.2	Yellowstone National Park, Wyoming
+1.5	Central Alaska
+1.3	Southern California
+1.2	Central California
+1.5	Southern California
+1.6	Northern California
+4.1	Queen Charlotte Islands, Canada region
+1.4	Yellowstone National Park, Wyoming
+1.7	Yellowstone National Park, Wyoming
+1.7	Kenai Peninsula, Alaska
+1.4	Central California
+4	Queen Charlotte Islands, Canada region
+1.2	Utah
+1.1	Central California
+4.4	Guatemala
+4.3	offshore Guatemala
+1.4	Central California
+4.9	off the coast of Aisen, Chile
+3.6	Mona Passage, Dominican Republic
+1	Northern California
+1.7	Northern California
+1.5	Yellowstone National Park, Wyoming
+4.3	offshore Guatemala
+1.8	Northern California
+1.3	Central California
+2	Central California
+2.1	Northern California
+2	Yellowstone National Park, Wyoming
+2.1	Central Alaska
+4.7	offshore Guatemala
+1.8	Yellowstone National Park, Wyoming
+1.5	Yellowstone National Park, Wyoming
+2	Central Alaska
+1.3	Central California
+4.7	offshore Guatemala
+1.5	Yellowstone National Park, Wyoming
+2.5	Central California
+1.8	Southern Alaska
+1.2	Yellowstone National Park, Wyoming
+1.6	Central Alaska
+1.7	Southern Alaska
+1.9	Northern California
+1.7	Yellowstone National Park, Wyoming
+2.3	Central California
+2.3	Southern Alaska
+2.1	Central California
+1.9	Northern California
+1.6	Kenai Peninsula, Alaska
+1.8	Northern California
+2.2	Island of Hawaii, Hawaii
+1.1	Greater Los Angeles area, California
+1	Northern California
+1.2	Yellowstone National Park, Wyoming
+1.4	Yellowstone National Park, Wyoming
+1.2	Yellowstone National Park, Wyoming
+3	Southern Alaska
+4.6	offshore Guatemala
+3.1	Kenai Peninsula, Alaska
+4.5	offshore Guatemala
+1.5	Central California
+1.5	Central California
+1.6	Southern California
+5	offshore Guatemala
+1.3	Utah
+5.1	Kuril Islands
+1.2	Southern Alaska
+4.9	offshore Guatemala
+1.7	Fox Islands, Aleutian Islands, Alaska
+4.5	offshore Guatemala
+2.1	Southern Alaska
+4.8	offshore Chiapas, Mexico
+6.5	offshore Guatemala
+2.3	Southern Alaska
+5.3	New Britain region, Papua New Guinea
+1.3	Southern California
+2	Andreanof Islands, Aleutian Islands, Alaska
+1.3	San Francisco Bay area, California
+3.4	Fox Islands, Aleutian Islands, Alaska
+1.3	Central Alaska
+1	Southern Alaska
+1	Southern Alaska
+2.2	Central California
+2.4	Andreanof Islands, Aleutian Islands, Alaska
+1.1	Central Alaska
+2.1	Baja California, Mexico
+2.6	Southern California
+2.1	Southern California
+2.2	Fox Islands, Aleutian Islands, Alaska
+1.7	offshore Oregon
+1	Northern California
+4.8	Nepal
+1.4	Utah
+1.5	Northern California
+5.6	Myanmar
+1.9	Baja California, Mexico
+4.5	Hindu Kush region, Afghanistan
+1.7	Kodiak Island region, Alaska
+1.1	offshore Northern California
+1.4	Northern California
+2.1	Southern Alaska
+1.7	Fox Islands, Aleutian Islands, Alaska
+1.8	Baja California, Mexico
+1.8	Central Alaska
+2	southern Idaho
+1.3	Central California
+1.4	Central Alaska
+1.3	Central California
+5.1	Santa Cruz Islands region
+1.2	Southern California
+1.9	Rat Islands, Aleutian Islands, Alaska
+1.3	Southern California
+1.5	western Montana
+1	Northern California
+1.8	Fox Islands, Aleutian Islands, Alaska
+2.7	Andreanof Islands, Aleutian Islands, Alaska
+1.5	Central California
+2.1	Unimak Island region, Alaska
+1.7	Alaska Peninsula
+2.5	Central Alaska
+2.3	Puerto Rico
+1.5	Central Alaska
+2.9	Alaska Peninsula
+1.6	Southern California
+1.1	Greater Los Angeles area, California
+1.4	Central Alaska
+1.7	Southern California
+1.6	Northern California
+5.8	Myanmar
+2.4	Southern Alaska
+4.3	near the coast of Nicaragua
+1.8	offshore Oregon
+1.4	Northern California
+1.2	Northern California
+1.3	Southern California
+1.8	Central Alaska
+1.3	Northern California
+1.7	Central Alaska
+1	Central California
+1.1	Central California
+2	Greater Los Angeles area, California
+2.6	Virgin Islands region
+3.4	Andreanof Islands, Aleutian Islands, Alaska
+4.7	central Mid-Atlantic Ridge
+1.7	Central California
+1.7	Andreanof Islands, Aleutian Islands, Alaska
+4.8	Banda Sea
+1.5	Andreanof Islands, Aleutian Islands, Alaska
+2.2	Southern California
+4	offshore Libertador O'Higgins, Chile
+1.5	Puerto Rico
+1.8	Island of Hawaii, Hawaii
+2	Alaska Peninsula
+1.9	northern Alaska
+2.5	northern Yukon Territory, Canada
+2.8	Alaska Peninsula
+1.2	Southern California
+1	Central Alaska
+1	Central California
+1.5	Yellowstone National Park, Wyoming
+2	Yellowstone National Park, Wyoming
+1.4	Central Alaska
+4.8	offshore Libertador O'Higgins, Chile
+4.4	offshore Guatemala
+2.7	Southern California
+4.5	Sumbawa region, Indonesia
+2.8	Puerto Rico
+2.6	Andreanof Islands, Aleutian Islands, Alaska
+1.5	Yellowstone National Park, Wyoming
+1.8	Central California
+4.7	near the east coast of Honshu, Japan
+4.6	offshore Libertador O'Higgins, Chile
+4.8	Fiji region
+4.4	offshore Guatemala
+1.7	Northern California
+1.9	Andreanof Islands, Aleutian Islands, Alaska
+4.5	Fiji region
+1.9	Southern Alaska
+2.1	Alaska Peninsula
+1.6	Alaska Peninsula
+1.8	Andreanof Islands, Aleutian Islands, Alaska
+1.5	Southern Alaska
+1.8	Southern Alaska
+1.3	Andreanof Islands, Aleutian Islands, Alaska
+4.8	Santa Cruz Islands
+1.4	Southern Alaska
+1.8	Andreanof Islands, Aleutian Islands, Alaska
+1.5	Central Alaska
+1.8	Southern California
+1.2	Southern California
+1.8	Northern California
+1.8	Southern Alaska
+1.9	Northern California
+5	Myanmar
+5	Myanmar
+4.6	south of Panama
+6.8	Myanmar
+1.1	Northern California
+1.2	Northern California
+1.8	Central Alaska
+4.9	Sichuan-Chongqing border region, China
+1.8	Alaska Peninsula
+2.6	Alaska Peninsula
+1.1	Long Valley area, California
+1.3	Nevada
+4.7	Vanuatu
+2.3	northern Alaska
+2.6	Southern California
+1.1	Southern Alaska
+1.5	Southern Alaska
+3.3	Virgin Islands region
+1.3	Southern California
+1.5	Oregon
+1.5	Kenai Peninsula, Alaska
+1.2	Northern California
+2.3	eastern Kentucky
+1.8	Northern California
+4.7	Sichuan-Chongqing border region, China
+3.1	Fox Islands, Aleutian Islands, Alaska
+1.4	offshore Central California
+4.3	Ionian Sea
+1	Northern California
+2.3	western Montana
+1.7	Central Alaska
+1.2	Central Alaska
+1.4	Central Alaska
+2	Southern Alaska
+1.2	Northern California
+1.2	Southern Alaska
+1.9	Island of Hawaii, Hawaii
+1.8	Andreanof Islands, Aleutian Islands, Alaska
+1.7	Andreanof Islands, Aleutian Islands, Alaska
+2.3	southern Idaho
+1.1	Southern California
+1.4	Central California
+2.5	eastern Kentucky
+1.6	Central California
+4.5	offshore Guatemala
+2.1	eastern Kentucky
+1.2	Central California
+1	Central California
+2	Southern Alaska
+5.1	offshore Guatemala
+4.3	eastern Kentucky
+2.2	Long Valley area, California
+1.1	Central Alaska
+1	Central Alaska
+2.6	Southeastern Alaska
+1	Southern California
+1.7	Central California
+1.8	Southern Alaska
+2.2	Virgin Islands region
+2.4	Baja California, Mexico
+2.1	Island of Hawaii, Hawaii
+5.9	central Peru
+1	Southern California
+1.5	Northern California
+1.3	Northern California
+2.1	Southern Alaska
+1.4	Southern Alaska
+1.1	Southern California
+2.6	Fox Islands, Aleutian Islands, Alaska
+4.8	near the south coast of Papua, Indonesia
+1.7	Andreanof Islands, Aleutian Islands, Alaska
+1.2	Seattle-Tacoma urban area, Washington
+1.7	Central California
+1.8	Southern Alaska
+1.4	Central Alaska
+1.3	Southern Alaska
+4.1	Hindu Kush region, Afghanistan
+1.4	Central Alaska
+2.6	offshore Northern California
+4.6	near the east coast of Honshu, Japan
+1	Southern California
+1.6	Santa Monica Bay, California
+1.8	Puerto Rico region
+1	Washington
+2.9	Kodiak Island region, Alaska
+2.3	Southern Alaska
+1.3	Southern Alaska
+3.5	Kodiak Island region, Alaska
+1.6	Central California
+1.9	Alaska Peninsula
+2.6	Kodiak Island region, Alaska
+1.1	Southern Alaska
+1.4	Central Alaska
+1.7	Northern California
+1.6	Yellowstone National Park, Wyoming
+1.1	Southern California
+1.8	Kenai Peninsula, Alaska
+3.2	Kodiak Island region, Alaska
+1	Central Alaska
+2.3	Central Alaska
+1.2	Southern California
+1.6	Central Alaska
+1	Northern California
+3	Andreanof Islands, Aleutian Islands, Alaska
+3.6	Central Alaska
+1.5	Washington
+1.2	Northern California
+1.5	Northern California
+1.4	Northern California
+3.7	Kodiak Island region, Alaska
+2.7	Alaska Peninsula
+1.2	Northern California
+4.6	Tonga
+2	Tortola, British Virgin Islands
+5	Flores region, Indonesia
+1.4	Central California
+2	Central Alaska
+1	Washington
+1.6	offshore Baja California, Mexico
+1.2	Central Alaska
+1.8	Northern California
+1.6	Central California
+1.7	Northern California
+1.8	Andreanof Islands, Aleutian Islands, Alaska
+2	Northern California
+1.6	Central California
+1.3	Greater Los Angeles area, California
+4.1	Vancouver Island, Canada region
+2	Northern California
+1.1	western Montana
+1.4	Northern California
+1.6	Central Alaska
+1	Northern California
+1.3	Northern California
+5.1	Java, Indonesia
+2	Northern California
+2	Southern Alaska
+1	Northern California
+1.1	Northern California
+1.3	Southern Alaska
+1	Northern California
+1.2	Southern Alaska
+1.4	Central Alaska
+3.2	Rat Islands, Aleutian Islands, Alaska
+1.5	Central Alaska
+1.9	Central California
+1.3	Central Alaska
+2.7	Mississippi
+1	Northern California
+3.3	Alaska Peninsula
+2	Southern Alaska
+1.7	Central Alaska
+2.3	Kenai Peninsula, Alaska
+1	Northern California
+1.6	Southern Alaska
+1.8	Central California
+1.1	Central Alaska
+1.7	Southern California
+2.2	Southern Alaska
+1	Washington
+2.8	Andreanof Islands, Aleutian Islands, Alaska
+2.9	Andreanof Islands, Aleutian Islands, Alaska
+1.1	Central Alaska
+1.7	Southern Alaska
+1.2	Central California
+3.2	Puerto Rico region
+1.2	Central Alaska
+1.6	Northern California
+1.2	Northern California
+2	Northern California
+2.7	Northern California
+1.2	Southern California
+1.3	Central Alaska
+3.6	Central Alaska
+1.9	Island of Hawaii, Hawaii
+1.9	Central California
+2.8	Andreanof Islands, Aleutian Islands, Alaska
+4.6	near the east coast of Honshu, Japan
+1.2	Central California
+2	Central California
+2.4	British Columbia, Canada
+1.2	Southern California
+2	San Francisco Bay area, California
+2.2	Southern California
+1.7	Central California
+1	Central California
+1.9	Southern Alaska
+1.7	Southern California
+1.1	Northern California
+1.9	Northern California
+1.4	Southern California
+1.7	Southern Alaska
+1	Nevada
+2	Central Alaska
+2.8	Southern Alaska
+1.2	Southern California
+5.3	Nias region, Indonesia
+4.8	Yunnan, China
+1.1	Northern California
+1.6	Central California
+3.1	Puerto Rico region
+4.5	Kepulauan Barat Daya, Indonesia
+1.6	Washington
+1.3	Wyoming
+2.3	British Columbia, Canada
+2.5	Central Alaska
+2.1	Central California
+2.1	Fox Islands, Aleutian Islands, Alaska
+1.4	Southern Alaska
+1.9	Southern Alaska
+1.5	Central California
+4.8	Fiji region
+1	Washington
+1.3	Central Alaska
+1.9	Southern Alaska
+1.8	Southern Alaska
+1.8	Southern Alaska
+4.9	Solomon Islands
+2.9	Fox Islands, Aleutian Islands, Alaska
+1.3	Central California
+2	Central California
+1.7	Southern Alaska
+1.7	Northern California
+2	Central California
+1.5	Northern California
+5.3	Bali Sea
+1.1	Northern California
+1.9	Northern California
+1.1	Long Valley area, California
