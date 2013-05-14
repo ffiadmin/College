@@ -1,0 +1,10 @@
+.pos 0x100 
+  irmovl $0,%eax # sum <- 0 
+  irmovl $1,%ecx # count <- 1 
+  irmovl $1000,%edx # limit <- 1000 
+
+top:
+  addl %ecx,%eax 
+.spazz 0x200
+  subl %eax,%edx 
+  jge top

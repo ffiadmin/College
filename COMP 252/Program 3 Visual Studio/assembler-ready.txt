@@ -1,0 +1,10 @@
+
+irmovl $0 %eax
+irmovl $1 %ecx
+irmovl $1000 %edx
+mrmovl 8 %esp   %ebp
+halt
+pushl %ebp
+addl %ecx %eax
+subl %eax %edx
+jge top

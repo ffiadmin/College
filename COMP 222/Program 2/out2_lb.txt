@@ -1,0 +1,15 @@
+http://www.gcc.edu
+http://www.acm.org/
+http://www.gcc.edu
+Ignored
+http://www.acm.org
+http://www.umich.edu
+http://www.wsj.com
+Ignored
+http://www.wsj.com
+http://www.umich.edu
+http://www.acm.org
+http://www.7springs.com
+http://www.acm.org
+http://www.gcc.edu
+http://www.acm.org

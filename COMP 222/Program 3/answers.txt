@@ -1,0 +1,3 @@
+1.	The sequential search appears to have a time complexity proportional to n^2.
+2.	The binary search only has a slight increase in time complexity with increased input, proportional to about log(n).
+3.	The sequential search would not have been impacted significantly, but the insertion for the binary search has linear performance. Therefore the binary search operations would increase linearly.

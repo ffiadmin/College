@@ -1,0 +1,67 @@
+VISIT http://www.gcc.edu
+BACK
+FORWARD
+FORWARD
+VISIT http://www.acm.org
+VISIT http://www.umich.edu
+VISIT http://www.wsj.com
+VISIT http://www.cnet.com
+VISIT http://www.weather.com
+VISIT http://www.drudgereport.com
+VISIT http://google.com
+VISIT http://www.ieee.org
+VISIT http://www.7springs.com
+BACK
+BACK
+BACK
+FORWARD
+FORWARD
+VISIT http://www.7springs.com
+VISIT http://my.gcc.edu
+VISIT http://www.cnet.com
+VISIT http://www.weather.com
+VISIT http://www.drudgereport.com
+VISIT http://pd.acm.org
+BACK
+BACK
+FORWARD
+FORWARD
+BACK
+BACK
+VISIT http://www.cnn.com
+VISIT http://www.arrl.org
+BACK
+FORWARD
+BACK
+BACK
+VISIT http://www.eham.org
+VISIT http://www.acm.org
+VISIT http://www.umich.edu
+VISIT http://www.wsj.com
+VISIT http://www.slashdot.org
+VISIT http://google.com
+VISIT http://www.ieee.org
+VISIT http://www.7springs.com
+BACK
+FORWARD
+FORWARD
+VISIT http://www.cnet.com
+BACK
+BACK
+VISIT http://www.weather.com
+VISIT http://www.drudgereport.com
+VISIT http://www.cnet.com
+FORWARD
+BACK
+BACK
+VISIT http://www.weather.com
+VISIT http://www.drudgereport.com
+VISIT http://www.gcc.edu
+VISIT http://www.cnet.com
+VISIT http://www.cmu.edu
+VISIT http://www.stanford.edu
+VISIT http://www.citeseer.com
+BACK
+BACK
+FORWARD
+QUIT

@@ -1,0 +1,13 @@
+.pos
+  irmovl $0,%eax 
+  irmovl $1,%ecx 
+  irmovl $1000,%edx 
+  mrmovl 8(%esp), %ebp
+  halt
+  pushl %ebp
+
+top:
+  addl %ecx,%eax 
+.spazz
+  subl %eax,%edx 
+  jge top

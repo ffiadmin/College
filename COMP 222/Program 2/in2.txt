@@ -1,0 +1,16 @@
+VISIT http://www.gcc.edu
+BACK
+FORWARD
+FORWARD
+VISIT http://www.acm.org
+VISIT http://www.umich.edu
+VISIT http://www.wsj.com
+FORWARD
+BACK
+BACK
+BACK
+VISIT http://www.7springs.com
+BACK
+BACK
+FORWARD
+QUIT
