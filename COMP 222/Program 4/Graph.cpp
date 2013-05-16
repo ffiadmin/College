@@ -32,7 +32,6 @@ Graph::Graph(const string &file) {
 	}
 
 	fin.close();
-	this->removeDups();
 }
 
 void Graph::addNode(int from, int to) {
@@ -40,14 +39,14 @@ void Graph::addNode(int from, int to) {
 	this->allocateSize(from + 1);
 	
 //Add the new node onto the end of the list
-	if (from != to)
+	if (from != to && !this->thereYet(from, to))
 		this->nodes[from] = new Node(to, this->nodes[from]);
 	
 //Check to see if the "to" node exists
 	this->allocateSize(to + 1);
 
 //Add the new node onto the end of the list
-	if (to != from)
+	if (to != from && !this->thereYet(to, from))
 		this->nodes[to] = new Node(from, this->nodes[to]);
 }
 
@@ -57,38 +56,12 @@ void Graph::allocateSize(int size) {
 	}
 }
 
-void Graph::removeDups() {
-	Node *item, *prev = new Node();
-	int seen[100], max = 0;
-
-	for (int i = 0; i < 100; ++i) {
-		seen[i] = 0;
+bool Graph::thereYet(int index, int item) {
+	for(Node* vertex = this->nodes[index]; vertex != NULL; vertex = vertex->next) {
+		if (vertex->data == item) return true;
 	}
 
-	for(int i = 0; i < this->nodes.size(); ++i) {
-		item = this->nodes[i];
-
-		while (item != NULL) {
-		//If this value in the array is 0, then it has not been encountered yet
-			if (seen[item->data] == 0) {
-				seen[item->data] = 1;
-				prev = item;
-		//If it has been encountered, blast it away with your linked list gun
-			} else {
-				prev->next = item->next;
-			}
-
-			max = item->data > max ? item->data : max;
-			item = item->next;
-		}
-
-		for (int i = 0; i <= max; ++i) {
-			seen[i] = 0;
-		}
-
-		max = 0;
-		prev = new Node();
-	}
+	return false;
 }
 
 bool Graph::search(int &count, int start, int target) const {
@@ -97,21 +70,62 @@ bool Graph::search(int &count, int start, int target) const {
 		return false;
 	}
 
-//#ifdef USE_DFT
-	//return this->searchDFS(count, start, target);
-//#else
+#ifdef USE_DFT
+	return this->searchDFS(count, start, target);
+#else
 	return this->searchBFS(count, start, target);
-//#endif
+#endif
 }
 
 bool Graph::searchBFS(int &count, int start, int target) const {
-	vector<Node*> queue;
-	visited.
-	queue.push_back(this->nodes[start]);
+	cout << "Traversing : " << start << " ";
 
-	while(!queue.empty()) {
+	vector<bool> visited(this->nodes.size());
+	vector<int> stack;
+	count = 1;
 
+	for (int i = 0; i < visited.size(); ++i) {
+		visited[i] = false;
 	}
+
+	visited[start] = true;
+	stack.push_back(start);
+
+//Do the searchz!
+	int vertex;
+
+	while(!stack.empty()) {
+		vertex = stack.front();
+		stack.erase(stack.begin());
+
+		if (vertex == target) {
+			return true;
+		}
+
+		for(Node* temp = this->nodes[vertex]; temp != NULL; temp = temp->next) {
+			if (!visited[temp->data]) {
+				visited[temp->data] = true;
+				stack.push_back(temp->data);
+
+				cout << temp->data << " ";
+				count ++;
+			}
+
+			if (temp->data == target) {
+				return true;
+			}
+		}
+	}
+
+	return false;
+
+	//vector<Node*> queue;
+	//visited.
+	//queue.push_back(this->nodes[start]);
+
+	//while(!queue.empty()) {
+
+	//}
 
 	/*
 	queue<Node*> open;
@@ -221,7 +235,45 @@ bool Graph::searchBFS(int &count, int start, int target) const {
 }
 
 bool Graph::searchDFS(int &count, int start, int target) const {
+	cout << "Traversing : ";
+
+	vector<bool> visited(this->nodes.size());
+	vector<int> stack;
+	vector<int> tstack;
+	count = 0;
+
+	for (int i = 0; i < visited.size(); ++i) {
+		visited[i] = false;
+	}
+	
+	stack.push_back(start);
+
+//Do the searchz!
+	int vertex;
+
+	while(!stack.empty()) {
+		vertex = stack.back();
+		stack.pop_back();
+		
+		if (!visited[vertex]) {
+			for(Node* temp = this->nodes[vertex]; temp != NULL; temp = temp->next) {
+				stack.push_back(temp->data);
+			}
+
+			count++;
+			visited[vertex] = true;
+			cout << vertex << " ";
+			
+			if (vertex == target) {
+				return true;
+			}
+		}
+	}
+
+	return false;
+
 //Containers
+	/*
 	vector<int> visit;
 	stack<int> stack;
 	Node* temp;
@@ -250,7 +302,7 @@ bool Graph::searchDFS(int &count, int start, int target) const {
 	count = visit.size();
 
 	return true;
-	/*
+	
 //Containers and the like
 	stack<DFSData*> stack;
 	vector<int> discovered;

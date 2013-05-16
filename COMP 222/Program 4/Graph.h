@@ -24,10 +24,12 @@ using std::string;
 using std::vector;
 
 struct Node {
-	Node() : data(-1), next(NULL) {}
-	Node(int data, Node *next) : data(data), next(next) {}
+	Node() : data(-1), next(NULL), visited(false), index(-1) {}
+	Node(int data, Node *next) : data(data), next(next), visited(false), index(-1) {}
 	int data;
 	Node *next;
+	bool visited;
+	int index;
 };
 
 struct DFSData {
@@ -50,7 +52,7 @@ private :
 
 	void addNode(int from, int to);
 	void allocateSize(int size);
-	void removeDups();
+	bool thereYet(int index, int item);
 	bool searchBFS(int &count, int start, int target) const;
 	bool searchDFS(int &count, int start, int target) const;
 };
