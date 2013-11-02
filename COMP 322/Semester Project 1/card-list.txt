@@ -1,0 +1,86 @@
+Alaska
+1
+Northwest Territory
+3
+Greenland
+2
+Alberta
+2
+Ontario
+2
+Quebec
+2
+Western United States
+3
+Eastern United States
+3
+Central America
+3
+Venezuela
+1
+Peru
+1
+Brazil
+3
+Argentina
+1
+Iceland
+1
+Scandinavia
+2
+Ukraine
+2
+Great Britain
+3
+Northern Europe
+3
+Western Europe
+3
+Southern Europe
+3
+North Africa
+2
+Egypt
+1
+East Africa
+1
+Congo
+1
+South Africa
+3
+Madagascar
+2
+Ural
+2
+Afghanistan
+2
+Middle East
+1
+Siberia
+2
+China
+1
+India
+2
+Siam
+1
+Mongolia
+1
+Siberia
+2
+Irkutsk
+2
+Yakutsk
+2
+Japan
+3
+Kamchatka
+1
+Indonesia
+3
+New Guinea
+1
+Western Australia
+3
+Eastern Australia
+3

@@ -1,0 +1,206 @@
+Alaska
+	Northwest Territory
+	Alberta
+	Kamchatka
+Northwest Territory
+	Alaska
+	Alberta
+	Ontario
+	Greenland
+Greenland
+	Northwest Territory
+	Ontario
+	Quebec
+	Iceland
+Alberta
+	Alaska
+	Northwest Territory
+	Ontario
+	Western United States
+Ontario
+	Northwest Territory
+	Greenland
+	Alberta
+	Quebec
+	Western United States
+	Eastern United States
+Quebec
+	Greenland
+	Ontario
+	Eastern United States
+Western United States
+	Alberta
+	Ontario
+	Eastern United States
+	Central America
+Eastern United States
+	Ontario
+	Quebec
+	Western United States
+	Central America
+Central America
+	Western United States
+	Eastern United States
+	Venezuela
+Venezuela
+	Central America
+	Peru
+	Brazil
+Peru
+	Venezuela
+	Brazil
+	Argentina
+Brazil
+	Venezuela
+	Peru
+	Argentina
+	North Africa
+Argentina
+	Peru
+	Brazil
+Iceland
+	Greenland
+	Scandinavia
+	Great Britain
+Scandinavia
+	Iceland
+	Ukraine
+	Great Britain
+	Northern Europe
+Ukraine
+	Scandinavia
+	Ural
+	Afghanistan
+	Middle East
+	Southern Europe
+	Northern Europe
+Great Britain
+	Iceland
+	Scandinavia
+	Northern Europe
+	Western Europe
+Northern Europe
+	Scandinavia
+	Ukraine
+	Southern Europe
+	Western Europe
+	Great Britain
+Western Europe
+	Great Britain
+	Northern Europe
+	Southern Europe
+	North Africa
+Southern Europe
+	Northern Europe
+	Ukraine
+	Middle East
+	Egypt
+	North Africa
+	Western Europe
+North Africa
+	Western Europe
+	Southern Europe
+	Egypt
+	East Africa
+	Congo
+	Brazil
+Egypt
+	Southern Europe
+	Middle East
+	East Africa
+	North Africa
+East Africa
+	Egypt
+	Middle East
+	Madagascar
+	South Africa
+	Congo
+	North Africa
+Congo
+	North Africa
+	East Africa
+	Madagascar
+	South Africa
+South Africa
+	Congo
+	East Africa
+	Madagascar
+Ural
+	Siberia
+	China
+	Afghanistan
+	Ukraine
+Afghanistan
+	Ukraine
+	Ural
+	China
+	India
+	Middle East
+Middle East
+	Southern Europe
+	Ukraine
+	Afghanistan
+	India
+	East Africa
+	Egypt
+Siberia
+	Ural
+	Yakutsk
+	Irkutsk
+	Mongolia
+	China
+China
+	Ural
+	Siberia
+	Mongolia
+	Siam
+	India
+	Afghanistan
+India
+	Middle East
+	Afghanistan
+	China
+	Siam
+Siam
+	India
+	China
+	Indonesia
+Mongolia
+	China
+Siberia
+	Irkutsk
+	Kamchatka
+	Japan
+Irkutsk
+	Siberia
+	Yakutsk
+	Kamchatka
+	Mongolia
+Yakutsk
+	Siberia
+	Irkutsk
+	Kamchatka
+Japan
+	Kamchatka
+	Mongolia
+Kamchatka
+	Yakutsk
+	Irkutsk
+	Mongolia
+	Japan
+	Alaska
+Indonesia
+	Siam
+	New Guinea
+	Western Australia
+New Guinea
+	Indonesia
+	Western Australia
+	Eastern Australia
+Western Australia
+	Indonesia
+	New Guinea
+	Eastern Australia
+Eastern Australia
+	New Guinea
+	Western Australia
