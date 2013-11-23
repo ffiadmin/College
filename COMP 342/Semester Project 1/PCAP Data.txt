@@ -1,0 +1,16 @@
+Bus Topology
+Node 1: 4.541 Mbps / 6017 Packets
+Node 2: 4.543 Mbps / 6022 Packets
+Node 3: 4.541 Mbps / 6017 Packets
+Node 4: 4.543 Mbps / 6023 Packets
+Node 5: 4.542 Mbps / 6019 Packets
+Node 6: 4.542 Mbps / 6019 Packets
+
+Wireless Topology
+Node 0: 8.107 Mbps / 21473 Packets
+Node 1: 8.068 Mbps / 21374 Packets
+Node 2: 8.127 Mbps / 21394 Packets
+Node 3: 7.948 Mbps / 21003 Packets
+Node 4: 7.990 Mbps / 21034 Packets
+Node 5: 7.948 Mbps / 21021 Packets
+Node 6: 8.079 Mbps / 21438 Packets
