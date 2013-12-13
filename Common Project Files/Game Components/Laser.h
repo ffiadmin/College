@@ -1,7 +1,7 @@
 /**
  * Laser class
  *
- * This class is designed to create a laser which has the 
+ * This class is designed to create a laser which has the
  * following capibilities:
  *  - Can change its color.
  *  - Can be fired from any X, Y location at any angle.
@@ -24,31 +24,36 @@
 
 #include "constants.h"
 #include "entity.h"
+#include "game.h"
+#include "gameError.h"
 #include "image.h"
+#include "textureManager.h"
 
 using std::clock_t;
 using std::vector;
 
 namespace laserNS {
-	const int HEAD_HEIGHT = 1;     // Height of the head pixel of the laser
-	const int HEAD_WIDTH  = 1;     // Width of the head pixel of the laser
-	const int TAIL        = 50;    // Length of the laser's tail, in pixels, not including the head
-	const int VELOCITY    = 250;   // Laser velocity, both X and Y
-	const int X           = 2;     // Default location of the head pixel of the laser
-	const int Y           = 2;     // Default location of the head pixel of the laser
-	const int TEXTURE_COLS = 1;
-	const float MASS = 0.0f;
+	const char  GRAPHIC[]    = "pictures\\laser.jpg"; //The graphic for the laser
+	const int   HEAD_HEIGHT  = 5;                     // Height of the head pixel of the laser
+	const int   HEAD_WIDTH   = 5;                     // Width of the head pixel of the laser
+	const int   TAIL         = 50;                    // Length of the laser's tail, in pixels
+	const int   VELOCITY     = 250;                   // Laser velocity, both X and Y
+	const float X            = 2.0f;                  // Default location of the head pixel of the laser
+	const float Y            = 2.0f;                  // Default location of the head pixel of the laser
 }
 
 class Laser : public Entity {
 private : 
+	Game* game;
+	Graphics* graphics;
+	TextureManager tm;
+
 	int collisions;
 	DWORD color;
 	int destroyConst;
 	int destroyCounter;
 	char destroyMethod;
 	bool destroyPending;
-	bool enemyLaser;
 	int lastPixelIndex;
 	vector<Image> tailImages;
 	double timeConst;
@@ -67,21 +72,19 @@ public :
 	static const char NO_DESTROY = 'N';
 	static const char TIMER_DESTROY = 'T';
 
-	Laser(DWORD color = Laser::COLOR_RED);
+	Laser(Game* game, Graphics* graphics, DWORD color = Laser::COLOR_RED);
 
+	void changeDirDeg(float angle);
+	void changeDirRad(float angle);
 	void destroy();
 	void draw();
 	void fireDeg(float x, float y, float angle);
 	void fireRad(float x, float y, float angle);
-	void fire(float x, float y);
-	bool getEnemyLaser() {return enemyLaser;}
-	void setEnemyLaser(bool type) {enemyLaser = type;}
 	int getCollisions();
 	void increaseCollision(int number = 1);
-	bool initialize(Game *gamePtr, int width, int height, int ncols, TextureManager *textureM);
+	bool initialize();
 	void setSelfDestructMethod(char method, int destroyConst = 0);
 	void update(float frameTime);
-	bool getDestruct() {return destroyPending;}
 };
 
 #endif
