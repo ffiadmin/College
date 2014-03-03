@@ -1,0 +1,8 @@
+
+<!-- saved from url=(0083)https://my.gcc.edu/ICS/icsfs/scene1.txt?target=8d68f7ee-d884-4f5b-89c9-ab40c7741505 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><style type="text/css"></style><style type="text/css"></style></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">3 3 1
+
+table
+1 1
+45
+1 1 2</pre></body></html>
