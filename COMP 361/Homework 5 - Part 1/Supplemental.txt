@@ -1,0 +1,24 @@
+**********************************
+********** DOCUMENT ONE **********
+**********************************
+
+(a) How long did you spend on each part of this assignment? 
+
+	Part I - 15 hours
+ 
+(b) Was the assignment difficult for you? Why or why not? 
+
+	The details of this assignment was fairly difficult, although the majority of the higher-level details
+	were quite easy and fun. Thank you for your help, too.
+
+**********************************
+********** DOCUMENT TWO **********
+**********************************
+
+
+(a) Design decisions
+
+	The architecture of the new classes in this assignment follow the structure of Cube class. The basis
+	class for cubes and these new polygons was geometry, which abstracted many of the low-level details
+	away. Since this was really nothing more than creating vertices and buffers, the implementation of
+	Cubes and polygons was very similar.
