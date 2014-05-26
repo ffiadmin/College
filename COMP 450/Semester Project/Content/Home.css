@@ -1,0 +1,15 @@
+﻿/*
+ * Jumbotron
+ * -------------------------------------
+*/
+
+section#start div#search-header {
+    margin: 40px 0px 20px 0px;
+}
+
+section#start div#search-header h2 {
+    font-size: 24px;
+    font-weight: 100;
+    padding-bottom: 5px;
+    text-align: center;
+}

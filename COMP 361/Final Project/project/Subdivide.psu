@@ -1,0 +1,146 @@
+foreach currentFace in the vector of faces EXISTING faces
+	currentFace.subDivisions++
+	set edgeCount to 0
+
+# Used to iterate over each half-edge in a face, regardless of the count
+	set startHalfEdge = currentFace.halfEdge
+	set curHalfEdge = startHalfEdge
+	set nextHalfEdge = curHalfEdge.next
+	set ranOnce = false
+
+# Iterate over each existing half-edge, and create new ones, as needed
+	while (curHalfEdge != startHalfEdge and ranOnce == true)
+		ranOnce = true
+		edgeCount++
+
+	# Adjacent face has been sub-divided... so, apparently, has this one
+		if (nextHalfEdge.pair.face.subDivisions == currentFace.subDivisions)
+		# Already done Bobo!!! ( It's 1:41 AM, right now :( )
+	# Adjacent face has NOT been sub-divided
+		else 
+		# Create the mid-point
+			set averagePos = average(curHalfEdge.vertex.pos, nextHalfEdge.vertex.pos)
+			create newVertex at averagePos
+
+			edgeCount++
+			newVertexVector.push(newVertex)
+
+		# Create a new half-edge to fill in this void
+			create newHalfEdge
+			newHalfEdge.face = currentFace
+			newHalfEdge.next = nextHalfEdge.next
+			newHalfEdge.vertex = nextHalfEdge.vertex
+
+			newHalfEdgeVector.push(newHalfEdge)
+
+		# Set up the existing half edge
+			nextHalfEdge.next = newHalfEdge
+			nextHalfEdge.vertex = newVertex
+			
+		# Now, shorten the existing vertex on the other side of the edge
+			nextHalfEdge.pair.vertex = newVertex
+
+		# The new vertex must be joined with the shorted one on the other side
+			newHalfEdge.pair = nextHalfEdge.pair
+			nextHalfEdge.pair = newHalfEdge
+
+		# Create a new half-edge, on the other side of the edge, to fill in this void
+			create newOtherHalfEdge
+			newOtherHalfEdge.face = nextHalfEdge.pair.face
+			newOtherHalfEdge.next = nextHalfEdge.pair.next
+			newOtherHalfEdge.pair = nextHalfEdge
+			newOtherHalfEdge.vertex = curHalfEdge.vertex
+
+			newHalfEdgeVector.push(newOtherHalfEdge)
+
+			newHalfEdge.pair.next = newOtherHalfEdge
+			nextHalfEdge.pair = newOtherHalfEdge
+		fi
+
+	# Get the pointers ready again
+		curHalfEdge = nextHalfEdge.next
+		nextHalfEdge = curHalfEdge.next
+	end while
+
+# Calculate the centriod and set a point there
+	set centroid = calcCentroid(oldVert)
+	create faceVertex at centroid
+	
+	newCentroidVector.push(faceVertex)
+
+# Now, split up this big face into triangles!
+	set curVertex = startHalfEdge.vertex
+	set curHalfEdge = startHalfEdge.next
+	set prevHalfEdge = NULL
+
+	for edgeCount iterations
+		if (not last iteration)
+			create newFace It should look just like Clayton's face, and should be saying the word "pants"
+			newFaceVector.push(newFace)
+		else 
+			set newFace = currentFace
+		fi
+
+	# Triangulating, so use three edges
+		create edgeOne
+		set edgeTwo = curHalfEdge
+		create edgeThree
+
+		newFace = edgeOne
+
+		newHalfEdgeVector.push(edgeOne)
+		newHalfEdgeVector.push(edgeThree)
+
+	# When we loop the whole way around, we must pair the last edge with the first
+		if (first iteration)
+			set firstEdge = edgeOne
+
+	# Configure edge one...
+		edgeOne.face = newFace
+		edgeOne.next = edgeTwo
+
+		if (prevHalfEdge is not NULL)
+			edgeOne.pair = prevHalfEdge 
+			prevHalfEdge.pair = edgeOne
+		fi
+
+		edgeOne.vertex = curVertex
+
+	# Since we are modifying an existing edge in the next step, just get ready for the next iteration
+	# so we don't lose any info
+		curVertex = edgeTwo.vertex
+		curHalfEdge = edgeTwo.next
+
+	# Configure edge two...
+		edgeTwo.face = newFace
+		edgeTwo.next = edgeThree
+		# edgeTwo.pair                  Does not need changed
+		# edgeTwo.vertex                Does not need changed
+
+	# Configure edge three...
+		edgeThree.face = newFace
+		edgeThree.next = edgeOne
+
+		if (last iteration)
+			edgeThree.pair = firstEdge
+			firstEdge.pair = edgeThree
+		fi
+
+		edgeThree.vertex = centroid
+
+	# The next face will need to pair with this one
+		prevHalfEdge = edgeThree
+	end for
+end foreach
+
+# Add the new vertices, faces, and edges to the master lists
+merge newVertexVector into masterVertexVector
+merge newHalfEdgeVector into masterHalfEdgeVector
+merge newCentroidVector into masterVertexVectir
+merge newFaceVector into masterFaceVector
+
+# Empty the new vertices, faces, and edges vectors
+newVertexVector.empty()
+newHalfEdgeVector.empty()
+newCentroidVector.empty()
+newFaceVector.empty()

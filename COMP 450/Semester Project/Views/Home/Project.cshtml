@@ -1,0 +1,411 @@
+﻿@model TrueFitProjectTracker.Factories.Dashboard.ProjectFactory
+
+@{
+	int counter = 0;
+	double percent = Math.Round(((double)Model.Bugs.Remaining / (double)(Model.Bugs.Remaining + Model.Tasks.Remaining)) * 100.0);
+	DateTime epoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc); // Unix epoch
+	TrueFitProjectTracker.Factories.Dashboard.TasksFactory tasks = ViewBag.Tasks;
+	ViewBag.Title = @Model.Name;
+}
+
+@section breadcrumb {
+    <li>
+        <a href="#">@Model.Name</a>
+    </li>
+}
+
+@section headerSection {
+    <div class="header-progress row">
+        <div class="col-md-8 col-md-offset-2">
+            <h2>@Model.Name</h2>
+
+            <div class="progress">
+                <div class="progress-bar progress-bar-info" aria-valuemax="100" aria-valuemin="0" aria-valuenow="@Model.Percent" role="progressbar" style="width: @Model.Percent%">
+                    <span>@Model.Percent%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highcharts/4.0.1/highcharts.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highcharts/4.0.1/highcharts-more.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highcharts/4.0.1/modules/solid-gauge.js"></script>
+	@Scripts.Render("~/Scripts/jQuery/jquery.burndown.js")
+	@Scripts.Render("~/Scripts/jQuery/jquery.locker.js")
+	@Scripts.Render("~/Scripts/jQuery/jquery.compare.js")
+	@Scripts.Render("~/Scripts/jQuery/jquery.recent.js")
+	@Scripts.Render("~/Scripts/jQuery/jquery.rotary.js")
+
+    <script>
+    	$(function() {
+    	//Derive chart data
+    		var bugBurnData = [@string.Join(",", Model.Bugs.Burndown.Data.ToArray())];
+    		var bugBurnMonths = getMonthNamesFromMonthAndYear(@Model.Bugs.Burndown.Start.Item1, @Model.Bugs.Burndown.Start.Item2, @Model.Bugs.Burndown.End.Item1, @Model.Bugs.Burndown.End.Item2);
+
+    		var bugDetailData = [@string.Join(",", Model.Bugs.RecentComplete.ToArray())]
+    		var bugDetailDays = getDayNamesFromDayOfWeek(@((int)DateTime.Now.DayOfWeek));
+
+    		var taskBurnData = [@string.Join(",", Model.Tasks.Burndown.Data.ToArray())];
+    		var taskBurnMonths = getMonthNamesFromMonthAndYear(@Model.Tasks.Burndown.Start.Item1, @Model.Tasks.Burndown.Start.Item2, @Model.Tasks.Burndown.End.Item1, @Model.Tasks.Burndown.End.Item2);
+
+    		var taskDetailData = [@string.Join(",", Model.Bugs.RecentComplete.ToArray())];
+    		var taskDetailDays = getDayNamesFromDayOfWeek(@((int)DateTime.Now.DayOfWeek));
+
+		//Build the charts
+    		$('#compare-chart').compare(@Model.Tasks.Remaining, '#77E38C', @Model.Bugs.Remaining, '#00D2FF');
+        	$('#task-progress').rotary(@Model.Tasks.Percent, '#77E38C');
+    		$('#bug-progress').rotary(@Model.Bugs.Percent, '#00D2FF');
+
+    		$('#task-burndown').burndown(taskBurnData, taskBurnMonths, '#77E38C');
+    		$('#task-recent-chart').recent(taskDetailData, taskDetailDays, '#77E38C');
+
+    		$('#bug-burndown').burndown(bugBurnData, bugBurnMonths, '#00D2FF');
+    		$('#bug-recent-chart').recent(bugDetailData, bugDetailDays, '#00D2FF');
+
+    		function getDayNamesFromDayOfWeek(number) { // 0 is sunday, return ['S', 'M', ...]
+    			var days = ['S', 'M', 'T', 'W', 'R', 'F', 'S'];
+    			var result = [];
+    			for (var i = number; i < number + 7; i++) {
+    				result.push(days[i % 7]);
+    			}
+    			return result;
+    		}
+
+    		function getMonthNamesFromMonthAndYear(month, year, monthEnd, yearEnd) {
+    			var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+							'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    			var result = [];
+    			while (month <= monthEnd || year <= yearEnd) {
+    				// 1st time, put year with month
+    				if (month == 0 || result.length == 0)
+    					result.push(months[month] + ', ' + year.toString()); // 2014
+    				else
+    					result.push(months[month]);
+    				month++;
+    				if (month == 12){ month = 0; year++; } // reset
+    			}
+    			return result;
+    		}
+        });
+    </script>
+}
+
+@section Styles {
+    @Styles.Render("~/Content/Project.css")
+}
+
+<section class="locker">
+	<h2>@Model.Name</h2>
+
+	<nav>
+		<ul>
+			<li><a href="#birds-eye-view">Bird's Eye View</a></li>
+			<li><a href="#story-details">Stories</a></li>
+			<li><a href="#software-bugs">Bugs</a></li>
+			<li><a href="#sprints">Sprints</a></li>
+		</ul>
+	</nav>
+</section>
+
+<section class="container">
+    <section class="center content no-border row">
+		<div class="birds-eye content-area row">
+			<div class="col-md-12">
+				<a name="birds-eye-view"></a>
+				<h2>Bird's Eye View</h2>
+			</div>
+
+			<div class="col-md-6">
+				<section class="compare panel panel-default">
+					<div class="panel-heading">Number of Stories vs. Bugs</div>
+
+					<div class="panel-body">
+						<div class="chart" id="compare-chart"></div>
+						<div class="compare-details details">
+							<h3>@percent<span>%</span></h3>
+							<h4>of our to-do list involves fixing bugs</h4>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div class="col-md-3">
+				<section class="panel panel-default story-completion">
+					<div class="panel-heading">Story Completion</div>
+
+					<div class="panel-body">
+						<div class="chart" id="task-progress"></div>
+						<div class="details task-details">
+							<h3>@Model.Tasks.Percent<span>%</span></h3>
+							<h4>of the stories are finished</h4>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div class="col-md-3">
+				<section class="bug-completion panel panel-default">
+					<div class="panel-heading">Bug Completion</div>
+
+					<div class="panel-body">
+						<div class="chart" id="bug-progress"></div>
+						<div class="bug-details details">
+							<h3>@Model.Bugs.Percent<span>%</span></h3>
+							<h4>of the bugs are closed</h4>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div class="content-area row tasks">
+			<div class="col-md-12">
+				<a name="story-details"></a>
+				<h2>Story Details</h2>
+			</div>
+
+			<div class="col-md-9">
+				<section class="panel panel-default task-burndown">
+					<header>
+						<h3>Story Burndown Chart</h3>
+						<h4>A glance into the future showing how we plan to complete these stories</h4>
+					</header>
+
+					<div class="panel-body">
+						<div class="burndown" id="task-burndown"></div>
+					</div>
+				</section>
+			</div>
+
+			<div class="col-md-3">
+				<section class="panel panel-default task-totals">
+					<div class="panel-heading">Totals</div>
+
+					<div class="panel-body">
+						<div class="col-md-12">
+							<h4>@Model.Tasks.Completed</h4>
+							<h5>Completed</h5>
+						</div>
+						<div class="col-md-12">
+							<h4>@Model.Tasks.Remaining</h4>
+							<h5>Remaining</h5>
+						</div>
+					</div>
+				</section>
+
+				<a href="http://truefitsolutions.com/#Contact" class="btn btn-block btn-success" role="button" target="_blank">Questions About our Progress?</a>
+			</div>
+
+			<div class="col-md-12">
+				<div class="recent row">
+					<h3>Sprints Completed this Past Week</h3>
+
+					<div class="col-md-12 recent-chart" id="task-recent-chart"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="bugs content-area row">
+			<div class="col-md-12">
+				<a name="software-bugs"></a>
+				<h2>Software Bugs</h2>
+			</div>
+
+			<div class="col-md-9">
+				<section class="bug-burndown panel panel-default">
+					<header>
+						<h3>Bug Burndown Chart</h3>
+						<h4>A glance into the future showing how we plan to resolve these bugs</h4>
+					</header>
+
+					<div class="panel-body">
+						<div class="burndown" id="bug-burndown"></div>
+					</div>
+				</section>
+			</div>
+
+			<div class="col-md-3">
+				<section class="bug-totals panel panel-default">
+					<div class="panel-heading">Totals</div>
+
+					<div class="panel-body">
+						<div class="col-md-12">
+							<h4>@Model.Bugs.Completed</h4>
+							<h5>Completed</h5>
+						</div>
+						<div class="col-md-12">
+							<h4>@Model.Bugs.Remaining</h4>
+                            <h5>Remaining</h5>
+                        </div>
+                    </div>
+                </section>
+
+                <button class="btn btn-block btn-info" data-toggle="modal" data-target="#myModal">
+                    Report a Bug
+                </button>
+			</div>
+
+            <div class="col-md-12">
+                <div class="bug-recent recent center row">
+                    <h3>Bugs Resolved this Past Week</h3>
+
+                    <div class="col-md-12 recent-chart" id="bug-recent-chart"></div>
+                </div>
+            </div>
+		</div>
+    </section>
+
+	<section class="center content row tasks">
+		<a name="sprints"></a>
+        <h2>All Sprints and Associated Stories</h2>
+
+		<div class="carousel slide" data-interval="false" data-ride="carousel" id="task-scroller">
+			<div class="carousel-inner">
+			@foreach (TrueFitProjectTracker.Models.Dashboard.SprintModel sprint in Model.List) {
+				<div class="@(counter == 0 ? "active " : "")item">
+					<header>
+						<h3>@sprint.Name</h3>
+						@if (!sprint.State.IsEmpty()) { <h4>State: @sprint.State</h4> }
+
+						@if (DateTime.Compare(epoch, sprint.StartDate) != 0) {
+						<ul>
+							<li><time class="from" datetime="@sprint.StartDate.ToString("yyyy-MM-dd")">@sprint.StartDate.ToString("MMMM dd, yyyy")</time></li>
+							
+							@if (DateTime.Compare(epoch, sprint.EndDate) != 0) {
+							<li>to</li>
+							<li><time class="to" datetime="@sprint.EndDate.ToString("yyyy-MM-dd")">@sprint.EndDate.ToString("MMMM dd, yyyy")</time></li>
+							}
+						</ul>
+						}
+					</header>
+
+					<div class="sprint-body">
+						<div class="row">
+							@{
+								List<TrueFitProjectTracker.Models.Dashboard.TaskModel> complete = new List<TrueFitProjectTracker.Models.Dashboard.TaskModel>();
+								List<TrueFitProjectTracker.Models.Dashboard.TaskModel> later = new List<TrueFitProjectTracker.Models.Dashboard.TaskModel>();
+								List<TrueFitProjectTracker.Models.Dashboard.TaskModel> started = new List<TrueFitProjectTracker.Models.Dashboard.TaskModel>();
+
+							//Calculate which tasks have been completed, started, or starting soon
+								foreach (TrueFitProjectTracker.Models.Dashboard.TaskModel task in sprint.Tasks) {
+									if (task.Progress.Percent == 0) {
+										later.Add(task);
+									} else if (task.Progress.Percent == 100) {
+										complete.Add(task);
+									} else {
+										started.Add(task);
+									}
+								}
+							}
+
+							@if (complete.Count > 0) {
+							<div class="col-md-4 complete">
+								<h5>Complete</h5>
+
+								<ul>
+								@foreach (TrueFitProjectTracker.Models.Dashboard.TaskModel task in complete) {
+									<li>@task.Name</li>
+								}
+								</ul>
+							</div>
+							} else {
+							<div class="col-md-4 complete empty">
+								<header>
+									<h5>No Completed Stories</h5>
+									<h6>Check back soon, we're working hard</h6>
+								</header>
+							</div>
+							}
+
+							@if (started.Count > 0) {
+							<div class="col-md-4 started">
+								<h5>In Progress</h5>
+
+								<ul>
+								@foreach (TrueFitProjectTracker.Models.Dashboard.TaskModel task in started) {
+									<li>@task.Name</li>
+								}
+								</ul>
+							</div>
+							} else {
+							<div class="col-md-4 empty started">
+								<header>
+									<h5>No Active Stories</h5>
+									<h6>@(later.Count == 0 ? "We're all done!" : "We'll be starting soon")</h6>
+								</header>
+							</div>
+							}
+
+							@if (later.Count > 0) {
+							<div class="col-md-4 later">
+								<h5>Starting Soon</h5>
+
+								<ul>
+								@foreach (TrueFitProjectTracker.Models.Dashboard.TaskModel task in later) {
+									<li>@task.Name</li>
+								}
+								</ul>
+							</div>
+							} else {
+							<div class="col-md-4 empty later">
+								<header>
+									<h5>No Pending Stories</h5>
+									<h6>That's all folks!</h6>
+								</header>
+							</div>
+							}
+						</div>
+					</div>
+				</div>
+
+				++counter;
+			}
+
+			</div>
+
+			@if (counter > 1) {
+			<ol class="carousel-indicators">
+			@for (int i = 0; i < counter; ++i) {
+				<li@(i == 0 ? " class=active" : "") data-slide-to="@i" data-target="#task-scroller"></li>
+			}
+			</ol>
+
+			<a class="carousel-control left" data-slide="prev" href="#task-scroller">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+
+			<a class="carousel-control right" data-slide="next" href="#task-scroller">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+			}
+        </div>
+    </section>
+    <!-- Button trigger modal -->
+    <button class="bug-floater" data-toggle="modal" data-target="#myModal">
+        Report<br />
+        Bug
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3 class="modal-title" id="myModalLabel">Report a Bug</h3>
+                </div>
+                <div class="modal-body">
+                    <iframe src="@Url.Action("ReportBug", "Home", new {Title = Model.Name})" width =" 400 " height =" 600 "></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+</section>

@@ -1,0 +1,628 @@
+﻿/*
+ * Jumbotron
+ * -------------------------------------
+*/
+
+section#start h2 {
+    font-weight: 100;
+    margin-top: 70px;
+    text-align: center;
+}
+
+section#start div.row div.progress {
+    margin-top: 20px;
+}
+
+/*
+ * Master header locked
+ * -------------------------------------
+*/
+
+section.locker {
+	-moz-box-shadow: 0px 0px 3px 5px rgba(32, 32, 32, 0.6);
+	-ms-box-shadow: 0px 0px 3px 5px rgba(32, 32, 32, 0.6);
+	-o-box-shadow: 0px 0px 3px 5px rgba(32, 32, 32, 0.6);
+	-webkit-box-shadow: 0px 0px 3px 5px rgba(32, 32, 32, 0.6);
+	box-shadow: 0px 0px 3px 5px rgba(32, 32, 32, 0.6);
+
+	background-image: url('../Images/banners/stressed_linen.png');
+	padding: 8px 10%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	z-index: 100;
+}
+
+section.locker h2 {
+	color: #FFFFFF;
+	font-weight: 100;
+	margin: 0px;
+}
+
+section.locker nav {
+	position: fixed;
+	right: 10%;
+	top: 0px;
+}
+
+section.locker nav ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+section.locker nav ul li {
+	display: inline-block;
+	padding: 14px 0px;
+}
+
+section.locker nav ul li a {
+	-moz-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+
+	border-bottom: 3px solid #181818;
+	color: #666666;
+	margin: 0px 5px;
+	font-weight: bold;
+    padding: 14px 10px;
+    text-decoration: none;
+}
+
+section.locker nav ul li a:hover {
+	background-color: #282828;
+	border-bottom: 3px solid #44BBFF;
+	color: #666666;
+}
+
+@media screen and (max-width: 750px) {
+	section.locker {
+		display: none;
+	}
+}
+
+/**
+ * Content area styles
+ * ----------------------------------
+*/
+
+section.container {
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+    width: 100%;
+}
+
+article.content, section.content {
+	border-top: 1px solid #DDDDDD;
+	padding: 30px 10% 30px 10%;
+}
+
+article.content.no-border, section.content.no-border, article.content.no-border, section.content.no-border {
+	border-bottom: none;
+	border-top: none;
+}
+
+article.content > h1, section.content h1, article.content h2, section.content h2, article.content header h1, section.content header h1, article.content header h2, section.content header h2 {
+	color: #303030;
+	font-size: 24px !important;
+	font-weight: 300;
+	line-height: normal !important;
+	margin: 0px 0px 20px 0px;
+	padding-bottom: 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+article.content p, section.content p {
+	color: #777777;
+	margin: 10px 0px 10px 0px;
+}
+
+article.content.center p, section.content.center p {
+	margin: 15px auto 15px auto;
+	max-width: 850px;
+	text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+	article.content, section.content {
+		padding: 15px 10% 15px 10%;
+	}
+}
+
+/*
+ * Charting section
+ * -------------------------------------
+*/
+
+div.content-area {
+	border-bottom: 3px dotted #757678;
+	padding: 30px 0px;
+	text-align: center;
+}
+
+div.content-area:last-child {
+	border-bottom: none;
+}
+
+div.content-area h2 {
+	background: url('../Images/sprites/title-indicators.png') no-repeat;
+	display: inline-block;
+	margin: 0px auto 30px auto;
+	padding: 20px 0px 20px 89px;
+}
+
+div.content-area section.panel {
+	-moz-box-shadow: -3px 5px 5px rgba(0, 0, 0, 0.15), 3px 5px 5px rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: -3px 5px 5px rgba(0, 0, 0, 0.15), 3px 5px 5px rgba(0, 0, 0, 0.15);
+    -o-box-shadow: -3px 5px 5px rgba(0, 0, 0, 0.15), 3px 5px 5px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: -3px 5px 5px rgba(0, 0, 0, 0.15), 3px 5px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: -3px 5px 5px rgba(0, 0, 0, 0.15), 3px 5px 5px rgba(0, 0, 0, 0.15);
+	
+	border: none;
+}
+
+div.content-area section.panel div.panel-heading {
+	background: #313B47;
+	color: #F2F3F5;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 14px;
+	text-align: center;
+}
+
+div.content-area section.panel div.panel-body {
+	background-color: #F2F3F5;
+	padding: 0px;
+}
+
+/*
+ * Bird's eye view
+ * -------------------------------------
+*/
+
+div.birds-eye h2 {
+	background-position: 3px -627px;
+	color: #313B47;
+}
+
+div.birds-eye section.panel div.panel-body {
+	background: url('../Images/sprites/title-indicators.png') no-repeat;
+}
+
+div.birds-eye section.compare.panel div.panel-body {
+	background-image: none;
+}
+
+div.birds-eye section.compare.panel div.panel-body div#compare-chart {
+	height: 250px;
+}
+
+div.birds-eye section.panel.story-completion div.panel-body {
+	background-position: center 117px;
+}
+
+div.birds-eye section.bug-completion.panel div.panel-body {
+	background-position: center -181px;
+}
+
+div.birds-eye section.panel div.panel-body div.chart {
+    height: 250px;
+	padding: 15px;
+}
+
+div.birds-eye section.panel div.panel-body div.details {
+	background: #313B47;
+	color: #F2F3F5;
+    margin-top: 30px;
+	padding: 15px;
+}
+
+div.birds-eye section.panel div.panel-body div.details h3 {
+	font-size: 65px;
+	font-weight: 300;
+	margin: 0px;
+	padding: 10px 0px;
+}
+
+div.birds-eye section.panel div.panel-body div.details h3 span {
+	font-size: 45px;
+}
+
+div.birds-eye section.panel div.panel-body div.details h4 {
+	font-size: 18px;
+}
+
+div.birds-eye section.panel div.panel-body div.details.task-details {
+	background: #77E38C;
+	color: #313B47;
+}
+
+div.birds-eye section.panel div.panel-body div.bug-details.details {
+	background: #00D2FF;
+	color: #313B47;
+}
+
+/*
+ * Story details
+ * -------------------------------------
+*/
+
+div.tasks h2 {
+	background-position: 3px -747px;
+	color: #47A447;
+}
+
+div.tasks section.task-burndown {
+	border-radius: 3px;
+}
+
+div.tasks section.task-burndown header {
+	background-color: #F2F3F5;
+	border-radius: 3px;
+	padding: 15px;
+}
+
+div.tasks section.task-burndown header h3 {
+	color: #313B47;
+	font-weight: 600;
+}
+
+div.tasks section.task-burndown header h4 {
+	color: #AAAAAA;
+	font-size: 16px;
+}
+
+div.tasks section.task-burndown div.panel-body {
+	padding: 0px 15px;
+}
+
+div.tasks section.task-totals h4 {
+	font-size: 65px;
+	font-weight: 600;
+	margin: 0px;
+	padding: 0px;
+}
+
+div.tasks section.task-totals div.panel-body div.col-md-12 {
+	border-bottom: 1px solid #757678;
+	padding: 5px 15px;
+}
+
+div.tasks section.task-totals div.panel-body div.col-md-12:last-child {
+	border-bottom: none;
+}
+
+div.tasks div.recent {
+	padding-top: 30px;
+}
+
+div.tasks div.recent h3 {
+	color: #313B47;
+	font-weight: 600;
+	margin-bottom: 0px;
+	padding: 0px 15px;
+}
+
+div.tasks div.recent div.recent-chart {
+	height: 200px;
+}
+
+/*
+ * Bug details
+ * -------------------------------------
+*/
+
+div.bugs h2 {
+	background-position: 3px -867px;
+	color: #2AABD2;
+}
+
+div.bugs section.bug-burndown {
+	border-radius: 3px;
+}
+
+div.bugs section.bug-burndown header {
+	background-color: #F2F3F5;
+	border-radius: 3px;
+	padding: 15px;
+}
+
+div.bugs section.bug-burndown header h3 {
+	color: #313B47;
+	font-weight: 600;
+}
+
+div.bugs section.bug-burndown header h4 {
+	color: #AAAAAA;
+	font-size: 16px;
+}
+
+div.bugs section.bug-burndown div.panel-body {
+	padding: 0px 15px;
+}
+
+div.bugs section.bug-totals h4 {
+	font-size: 65px;
+	font-weight: 600;
+	margin: 0px;
+	padding: 0px;
+}
+
+div.bugs section.bug-totals div.panel-body div.col-md-12 {
+	border-bottom: 1px solid #757678;
+	padding: 5px 15px;
+}
+
+div.bugs section.bug-totals div.panel-body div.col-md-12:last-child {
+	border-bottom: none;
+}
+
+div.bugs div.recent {
+	padding-top: 30px;
+}
+
+div.bugs div.recent h3 {
+	color: #313B47;
+	font-weight: 600;
+	margin-bottom: 0px;
+	padding: 0px 15px;
+}
+
+div.bugs div.recent div.recent-chart {
+	height: 200px;
+}
+
+/*
+ * Task list
+ * -------------------------------------
+*/
+
+section.tasks {
+	padding: 0px;
+}
+
+section.tasks > h2 {
+	display: none;
+}
+
+section.tasks div.carousel div.carousel-inner div.item > header {
+    background-color: #181818;
+    padding: 50px 17%;
+	position: relative;
+}
+
+section.tasks div.carousel header h3 {
+	background: url('../Images/sprites/tasks.png') no-repeat;
+	background-position: -23px 0px;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0px;
+    padding: 3px 0px 14px 35px;
+    text-transform: uppercase;
+}
+
+section.tasks div.carousel header h4 {
+    color: #666666;
+    font-size: 18px;
+    margin: 0px;
+}
+
+section.tasks div.carousel header ul {
+	background: url('../Images/sprites/tasks.png') no-repeat;
+	background-position: -24px -59px;
+	color: #666666;
+	list-style: none;
+	margin: 0px;
+	padding: 3px 0px 3px 33px;
+	position: absolute;
+	right: 200px;
+	top: 50px;
+}
+
+section.tasks div.carousel header ul li {
+	display: inline-block;
+}
+
+section.tasks div.carousel div.sprint-body {
+	display: table;
+	padding: 50px 17% 75px 17%;
+	width: 100%;
+}
+
+section.tasks div.carousel div.sprint-body div.row {
+	display: table-row;
+	height: 100%;
+}
+
+section.tasks div.carousel div.sprint-body div.row div {
+	border-top: 5px solid #181818;
+	display: table-cell;
+	float: none;
+	margin: 0px 5px;
+	padding: 0px;
+	text-align: center;
+	vertical-align: top;
+}
+
+section.tasks div.carousel div.sprint-body div.row div:hover {
+	border-top: 5px solid #585858;
+}
+
+section.tasks div.carousel div.sprint-body div.row div.empty {
+	border: none;
+	text-align: center;
+	vertical-align: middle;
+}
+
+section.tasks div.carousel div.sprint-body div.row div.complete.empty {
+	color: #00B22D;
+}
+
+section.tasks div.carousel div.sprint-body div.row div.started.empty {
+	color: #B2B200;
+}
+
+section.tasks div.carousel div.sprint-body div.row div.later.empty {
+	color: #B20000;
+}
+
+section.tasks div.carousel div.sprint-body div.row div h5 {
+	background: url('../Images/sprites/tasks.png') no-repeat;
+	display: inline-block;
+	padding: 3px 0px 3px 33px;
+	font-size: 20px;
+	text-align: center;
+}
+
+section.tasks div.carousel div.sprint-body div.row div.complete h5 {
+	background-position: -27px -115px;
+	color: #00B22D;
+}
+
+section.tasks div.carousel div.sprint-body div.row div.started h5 {
+	background-position: -27px -171px;
+	color: #B2B200;
+}
+
+section.tasks div.carousel div.sprint-body div.row div.later h5 {
+	background-position: -27px -229px;
+	color: #B20000;
+}
+
+section.tasks div.carousel div.sprint-body div.row div.empty h5 {
+	padding: 91px 0px 0px 0px;
+}
+
+section.tasks div.carousel div.sprint-body div.row div.complete.empty h5 {
+	background-position: center -338px;
+}
+
+section.tasks div.carousel div.sprint-body div.row div.started.empty h5 {
+	background-position: center -475px;
+}
+
+section.tasks div.carousel div.sprint-body div.row div.later.empty h5 {
+	background-position: center -611px;
+}
+
+section.tasks div.carousel div.sprint-body div.row div ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+section.tasks div.carousel div.sprint-body div.row div ul li {
+	background: #F7F7F7;
+	border-bottom: 1px solid #E9E9E9;
+	padding: 11px;
+}
+
+section.tasks div.carousel div.sprint-body div.row div ul li:hover {
+	background-color: #F0F0F0;
+}
+
+section.tasks div.carousel div.sprint-body div.row div ul li:last-child {
+	border-bottom: none;
+}
+
+section.tasks div.carousel ol li {
+	border: 1px solid #000000;
+}
+
+section.tasks div.carousel ol li.active {
+	background-color: #000000;
+}
+
+section.tasks div.carousel a.carousel-control {
+	margin-top: 162px;
+}
+
+@media screen and (max-width: 970px) {
+	section.tasks div.carousel div.carousel-inner div.item > header {
+		padding: 30px;
+	}
+
+	section.tasks div.carousel header h3 {
+		background-image: none;
+		padding: 0px;
+		text-align: center;
+	}
+
+	section.tasks div.carousel header h4 {
+		display: none;
+	}
+
+	section.tasks div.carousel header ul {
+		background-image: none;
+		padding: 15px 0px 0px 0px;
+		position: static;
+		text-align: center;
+	}
+
+	section.tasks div.carousel div.sprint-body {
+		padding: 10px 20% 40px 20%;
+	}
+
+	section.tasks div.carousel div.sprint-body div.row div {
+		border: none;
+		display: block;
+		padding: 20px 0px;
+	}
+
+	section.tasks div.carousel div.sprint-body div.row div.empty h5 {
+		padding: 3px 0px 3px 33px;
+	}
+
+	section.tasks div.carousel div.sprint-body div.row div.complete.empty h5 {
+		background-position: -27px -115px;
+		color: #00B22D;
+	}
+
+	section.tasks div.carousel div.sprint-body div.row div.started.empty h5 {
+		background-position: -27px -171px;
+		color: #B2B200;
+	}
+
+	section.tasks div.carousel div.sprint-body div.row div.later.empty h5 {
+		background-position: -27px -229px;
+		color: #B20000;
+	}
+
+	section.tasks div.carousel div.sprint-body div.row div.empty h6 {
+		display: none;
+	}
+
+	section.tasks div.carousel a.carousel-control {
+		margin-top: 86px;
+	}
+}
+
+/*
+ * Floating bug link
+ * -------------------------------------
+*/
+
+button.bug-floater {
+	background-image: linear-gradient(to bottom,#5bc0de 0,#31b0d5 100%);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	bottom: -1px;
+	border: 1px solid #008C8C;
+	color: #FFFFFF;
+	padding: 15px;
+	position: fixed;
+	right: 20px;
+	text-align: center;
+}
+
+button.bug-floater:hover {
+	border: 1px solid #004040;
+	text-decoration: none;
+}
