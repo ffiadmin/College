@@ -11,6 +11,8 @@ import UIKit
 class TableViewController: UITableViewController, ITable {
 
     let events = [ "Born", "Lived", "Died" ]
+    let dates = [ "07/08/1993", "Whenevs", "Yikes" ];
+    let awesome = [ "Whoananzas", "Piers", "Starz fruitsz" ];
     var path = NSIndexPath()
     
     override func viewDidLoad() {
@@ -37,12 +39,29 @@ class TableViewController: UITableViewController, ITable {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return events.count
+        switch section {
+            case 0:
+                return events.count
+            
+            case 1:
+                return awesome.count
+            
+            default:
+                return 0
+        }
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell
-        cell.textLabel?.text = events[indexPath.row]
+        var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as Cell
+        
+        /*if indexPath.section == 0 {
+            cell.textLabel?.text = events[indexPath.row]
+        } else {
+            cell.textLabel?.text = awesome[indexPath.row]
+        }*/
+        
+        cell.EventLabel.text = events[indexPath.row]
+        cell.DetailLabel.text = dates[indexPath.row]
 
         // Configure the cell...
 
@@ -56,12 +75,25 @@ class TableViewController: UITableViewController, ITable {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let child = segue.destinationViewController as FromTable
-        child.Text = events[path.item]
         child.Delegate = self
+        
+        if path.section == 0 {
+            child.Text = events[path.row]
+        } else {
+            child.Text = awesome[path.row]
+        }
     }
     
     func done(child: FromTable) {
         dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "Events"
+        } else {
+            return "Awesome"
+        }
     }
 
     /*

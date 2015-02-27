@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="MainVC" customModule="Exam1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvX-V6-ugF">
+                                <rect key="frame" x="16" y="57" width="568" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="5Qs-No-Aqf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGi-Pk-2CF">
+                                <rect key="frame" x="16" y="129" width="568" height="30"/>
+                                <state key="normal" title="Update">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Aww-tt-PZ6" kind="presentation" id="rn1-CT-KCV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IGi-Pk-2CF" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="AQX-ZV-M4r"/>
+                            <constraint firstAttribute="centerX" secondItem="dvX-V6-ugF" secondAttribute="centerX" id="ESJ-xh-g3E"/>
+                            <constraint firstItem="IGi-Pk-2CF" firstAttribute="top" secondItem="dvX-V6-ugF" secondAttribute="bottom" constant="39" id="H2S-Ql-wIA"/>
+                            <constraint firstAttribute="centerX" secondItem="IGi-Pk-2CF" secondAttribute="centerX" id="IBk-be-u8S"/>
+                            <constraint firstItem="dvX-V6-ugF" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="37" id="IFE-el-3xq"/>
+                            <constraint firstItem="dvX-V6-ugF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Ia3-rY-kwn"/>
+                            <constraint firstItem="IGi-Pk-2CF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="VF3-3p-hj6"/>
+                            <constraint firstItem="dvX-V6-ugF" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="n78-L6-4yv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MainLabel" destination="dvX-V6-ugF" id="40Z-vs-flq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--UpdateVC-->
+        <scene sceneID="BuB-KB-GTl">
+            <objects>
+                <viewController id="Aww-tt-PZ6" customClass="UpdateVC" customModule="Exam1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pvb-5C-uk1"/>
+                        <viewControllerLayoutGuide type="bottom" id="GXq-2j-qL9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sdp-pF-8Xu" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="228-QK-BQl">
+                                <rect key="frame" x="16" y="59" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orx-a7-AS2">
+                                <rect key="frame" x="16" y="128" width="568" height="30"/>
+                                <state key="normal" title="Replace">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ReplaceHandler:" destination="Aww-tt-PZ6" eventType="touchUpInside" id="8D4-Pi-z9n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bv4-uu-tfX">
+                                <rect key="frame" x="16" y="166" width="568" height="30"/>
+                                <state key="normal" title="Append">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="AppendHandler:" destination="Aww-tt-PZ6" eventType="touchUpInside" id="zfe-s7-hc1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="228-QK-BQl" firstAttribute="top" secondItem="Pvb-5C-uk1" secondAttribute="bottom" constant="39" id="Azg-IK-j3O"/>
+                            <constraint firstItem="orx-a7-AS2" firstAttribute="trailing" secondItem="Sdp-pF-8Xu" secondAttribute="trailingMargin" id="DGA-Dj-tlM"/>
+                            <constraint firstItem="bv4-uu-tfX" firstAttribute="top" secondItem="orx-a7-AS2" secondAttribute="bottom" constant="8" id="F8y-VO-9A0"/>
+                            <constraint firstItem="orx-a7-AS2" firstAttribute="leading" secondItem="Sdp-pF-8Xu" secondAttribute="leadingMargin" id="KDf-Yw-Y72"/>
+                            <constraint firstAttribute="centerX" secondItem="orx-a7-AS2" secondAttribute="centerX" id="Kbc-kZ-uZ7"/>
+                            <constraint firstAttribute="centerX" secondItem="bv4-uu-tfX" secondAttribute="centerX" id="WVv-8g-JGz"/>
+                            <constraint firstItem="228-QK-BQl" firstAttribute="trailing" secondItem="Sdp-pF-8Xu" secondAttribute="trailingMargin" id="aKN-fH-b5J"/>
+                            <constraint firstItem="orx-a7-AS2" firstAttribute="top" secondItem="228-QK-BQl" secondAttribute="bottom" constant="39" id="hAD-8u-ATt"/>
+                            <constraint firstAttribute="centerX" secondItem="228-QK-BQl" secondAttribute="centerX" id="iPR-8E-PFb"/>
+                            <constraint firstItem="228-QK-BQl" firstAttribute="leading" secondItem="Sdp-pF-8Xu" secondAttribute="leadingMargin" id="k6e-zA-5oB"/>
+                            <constraint firstItem="bv4-uu-tfX" firstAttribute="leading" secondItem="Sdp-pF-8Xu" secondAttribute="leadingMargin" id="m6b-OT-Fu0"/>
+                            <constraint firstItem="bv4-uu-tfX" firstAttribute="trailing" secondItem="Sdp-pF-8Xu" secondAttribute="trailingMargin" id="pD2-bI-yqu"/>
+                        </constraints>
+                        <connections>
+                            <action selector="DismissHandler:" destination="Aww-tt-PZ6" eventType="touchUpInside" id="pVI-br-iCD"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="TextField" destination="228-QK-BQl" id="84O-Ne-KKl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3fk-ka-Xtw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967" y="375"/>
+        </scene>
+    </scenes>
+</document>

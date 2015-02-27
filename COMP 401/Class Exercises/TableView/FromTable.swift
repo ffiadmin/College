@@ -10,6 +10,7 @@ import UIKit
 
 class FromTable: UIViewController {
 
+    @IBOutlet weak var Picker: UIDatePicker!
     @IBOutlet weak var Back: UIButton!
     @IBOutlet weak var Label: UILabel!
     var Delegate: ITable!

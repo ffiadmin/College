@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ncE-q9-JJF">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Schedule-->
+        <scene sceneID="wnN-xG-5Ou">
+            <objects>
+                <tableViewController title="Schedule" id="Gl7-0d-OJy" customClass="ScheduleController" customModule="Project1" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="U1Q-WL-DMI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="80" id="YbU-rR-37X" customClass="ScheduleCell" customModule="Project1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YbU-rR-37X" id="QtX-6t-U2D">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IpT-Sz-JdL">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="80"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Gl7-0d-OJy" id="JZw-9C-uF7"/>
+                            <outlet property="delegate" destination="Gl7-0d-OJy" id="w9G-eR-F5n"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Schedule" id="a34-hO-Iqh"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5OA-dc-iCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2924" y="-704"/>
+        </scene>
+        <!--Schedule Detail Controller-->
+        <scene sceneID="IdN-dP-sgA">
+            <objects>
+                <viewController id="uOU-Wh-8hS" customClass="ScheduleDetailController" customModule="Project1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WFI-lQ-v6Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="2WF-gW-Jf9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tcI-j0-20g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FYt-pu-HEr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3720" y="-696"/>
+        </scene>
+        <!--Teams-->
+        <scene sceneID="9AJ-Ea-Tve">
+            <objects>
+                <viewController title="Teams" id="i4U-MD-i90" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M0M-Sq-2I2"/>
+                        <viewControllerLayoutGuide type="bottom" id="LPE-kY-fDV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3vO-hN-GnU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Teams" id="MIF-da-s4F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KAc-MG-lzW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2924" y="-34"/>
+        </scene>
+        <!--Tab Controller-->
+        <scene sceneID="AJn-3h-i8h">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cuz-OQ-c3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController id="ncE-q9-JJF" customClass="TabController" customModule="Project1" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="fUM-Vu-3TK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="LL3-dg-HBy" kind="relationship" relationship="viewControllers" id="o2r-Kd-J4P"/>
+                        <segue destination="UI7-Wf-Bmb" kind="relationship" relationship="viewControllers" id="byi-HV-wuZ"/>
+                        <segue destination="ibW-Jm-0hm" kind="relationship" relationship="viewControllers" id="cPr-3Z-8O9"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="1320" y="-34"/>
+        </scene>
+        <!--Schedule-->
+        <scene sceneID="Pzh-Kh-FeO">
+            <objects>
+                <navigationController title="Schedule" automaticallyAdjustsScrollViewInsets="NO" id="LL3-dg-HBy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Schedule" image="calendar.png" id="7Qg-6b-ETc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oyZ-Tg-7nF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Gl7-0d-OJy" kind="relationship" relationship="rootViewController" id="2iL-h8-870"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sG5-9j-h9r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2112" y="-696"/>
+        </scene>
+        <!--Teams-->
+        <scene sceneID="9VV-1Q-kc9">
+            <objects>
+                <navigationController title="Teams" automaticallyAdjustsScrollViewInsets="NO" id="UI7-Wf-Bmb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Teams" image="list.png" id="Olh-4y-De8"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5eI-U7-cox">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="i4U-MD-i90" kind="relationship" relationship="rootViewController" id="eeO-3l-h4W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Gj-5D-jaZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2112" y="-34"/>
+        </scene>
+        <!--Countdown-->
+        <scene sceneID="FNu-8z-zpH">
+            <objects>
+                <viewController title="Countdown" id="uq5-p8-mfO" customClass="CountdownController" customModule="Project1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f1d-BA-BzS"/>
+                        <viewControllerLayoutGuide type="bottom" id="lTu-Gv-Rcw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n4O-cA-z6M">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Replaced at load time" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4W-rp-d6p">
+                                <rect key="frame" x="80" y="115" width="441" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="l4W-rp-d6p" secondAttribute="trailing" constant="63" id="CK3-Lt-eLM"/>
+                            <constraint firstAttribute="centerX" secondItem="l4W-rp-d6p" secondAttribute="centerX" id="NYX-H5-Nj1"/>
+                            <constraint firstItem="l4W-rp-d6p" firstAttribute="leading" secondItem="n4O-cA-z6M" secondAttribute="leadingMargin" constant="64" id="Z6n-S0-4VR"/>
+                            <constraint firstItem="l4W-rp-d6p" firstAttribute="top" secondItem="f1d-BA-BzS" secondAttribute="bottom" constant="51" id="pWd-MA-TBz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Countdown" id="JVo-LG-zka">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="Ojc-nC-E6g">
+                            <connections>
+                                <action selector="RefreshHandler:" destination="uq5-p8-mfO" id="1sx-hR-wNB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="Indicator" destination="l4W-rp-d6p" id="wx3-Nm-hpk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EpO-QI-QiE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2924" y="638"/>
+        </scene>
+        <!--Countdown-->
+        <scene sceneID="nup-0C-5iI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ibW-Jm-0hm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Countdown" image="clock.png" id="a4k-uZ-LzS"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BVi-1G-M5O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uq5-p8-mfO" kind="relationship" relationship="rootViewController" id="gda-Wc-aY6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="etf-hf-TAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2112" y="638"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar.png" width="30" height="30"/>
+        <image name="clock.png" width="30" height="30"/>
+        <image name="list.png" width="30" height="30"/>
+    </resources>
+</document>

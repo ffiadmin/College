@@ -1,0 +1,306 @@
+[
+	{
+		"home": 2,
+		"away": 0,
+		"date": "02-06-2016",
+		"location": {
+			"name": "Estadio Olímpico Metropolitano",
+			"latitude": "15.470094",
+			"longitude": "-88.006931"
+		}
+	},
+	{
+		"home": 2,
+		"away": 4,
+		"date": "10-11-2016",
+		"location": {
+			"name": "Estadio Olímpico Metropolitano",
+			"latitude": "15.470094",
+			"longitude": "-88.006931"
+		}
+	},
+	{
+		"home": 5,
+		"away": 4,
+		"date": "02-06-2016",
+		"location": {
+			"name": "Estadio Rommel Fernández",
+			"latitude": "9.035833",
+			"longitude": "-79.469444"
+		}
+	},
+	{
+		"home": 2,
+		"away": 1,
+		"date": "03-22-2016",
+		"location": {
+			"name": "Estadio Olímpico Metropolitano",
+			"latitude": "15.470094",
+			"longitude": "-88.006931"
+		}
+	},
+	{
+		"home": 3,
+		"away": 0,
+		"date": "06-07-2016",
+		"location": {
+			"name": "Independence Park",
+			"latitude": "18.001944",
+			"longitude": "-76.771667"
+		}
+	},
+	{
+		"home": 3,
+		"away": 5,
+		"date": "03-22-2016",
+		"location": {
+			"name": "Independence Park",
+			"latitude": "18.001944",
+			"longitude": "-76.771667"
+		}
+	},
+	{
+		"home": 0,
+		"away": 4,
+		"date": "03-22-2016",
+		"location": {
+			"name": "Dick's Sporting Goods Park",
+			"latitude": "39.805556",
+			"longitude": "-104.891944"
+		}
+	},
+	{
+		"home": 5,
+		"away": 2,
+		"date": "03-26-2016",
+		"location": {
+			"name": "Estadio Rommel Fernández",
+			"latitude": "9.035833",
+			"longitude": "-79.469444"
+		}
+	},
+	{
+		"home": 1,
+		"away": 0,
+		"date": "03-26-2016",
+		"location": {
+			"name": "Estadio Azteca",
+			"latitude": "19.302911",
+			"longitude": "-99.150442"
+		}
+	},
+	{
+		"home": 3,
+		"away": 1,
+		"date": "06-04-2016",
+		"location": {
+			"name": "Independence Park",
+			"latitude": "18.001944",
+			"longitude": "-76.771667"
+		}
+	},
+	{
+		"home": 4,
+		"away": 2,
+		"date": "06-07-2016",
+		"location": {
+			"name": "Estadio Nacional de Costa Rica",
+			"latitude": "9.936389",
+			"longitude": "-84.107778"
+		}
+	},
+	{
+		"home": 5,
+		"away": 1,
+		"date": "06-07-2016",
+		"location": {
+			"name": "Estadio Rommel Fernández",
+			"latitude": "9.035833",
+			"longitude": "-79.469444"
+		}
+	},
+	{
+		"home": 2,
+		"away": 3,
+		"date": "06-11-2016",
+		"location": {
+			"name": "Estadio Tiburcio Carías Andino",
+			"latitude": "14.098403",
+			"longitude": "-87.203978"
+		}
+	},
+	{
+		"home": 1,
+		"away": 4,
+		"date": "06-11-2016",
+		"location": {
+			"name": "Estadio Azteca",
+			"latitude": "19.302911",
+			"longitude": "-99.150442"
+		}
+	},
+	{
+		"home": 0,
+		"away": 5,
+		"date": "06-11-2016",
+		"location": {
+			"name": "CenturyLink Field",
+			"latitude": "47.595278",
+			"longitude": "-122.331667"
+		}
+	},
+	{
+		"home": 1,
+		"away": 5,
+		"date": "10-11-2016",
+		"location": {
+			"name": "Estadio Azteca",
+			"latitude": "19.302911",
+			"longitude": "-99.150442"
+		}
+	},
+	{
+		"home": 4,
+		"away": 5,
+		"date": "06-18-2016",
+		"location": {
+			"name": "Estadio Nacional de Costa Rica",
+			"latitude": "9.936389",
+			"longitude": "-84.107778"
+		}
+	},
+	{
+		"home": 0,
+		"away": 3,
+		"date": "10-11-2016",
+		"location": {
+			"name": "Sporting Park",
+			"latitude": "39.1218",
+			"longitude": "-94.8237"
+		}
+	},
+	{
+		"home": 0,
+		"away": 2,
+		"date": "06-18-2016",
+		"location": {
+			"name": "Rio Tinto Stadium",
+			"latitude": "40.582923",
+			"longitude": "-111.893156"
+		}
+	},
+	{
+		"home": 4,
+		"away": 0,
+		"date": "09-06-2016",
+		"location": {
+			"name": "Estadio Nacional de Costa Rica",
+			"latitude": "9.936389",
+			"longitude": "-84.107778"
+		}
+	},
+	{
+		"home": 4,
+		"away": 3,
+		"date": "03-26-2016",
+		"location": {
+			"name": "Estadio Nacional de Costa Rica",
+			"latitude": "9.936389",
+			"longitude": "-84.107778"
+		}
+	},
+	{
+		"home": 5,
+		"away": 3,
+		"date": "09-06-2016",
+		"location": {
+			"name": "Estadio Rommel Fernández",
+			"latitude": "9.035833",
+			"longitude": "-79.469444"
+		}
+	},
+	{
+		"home": 2,
+		"away": 5,
+		"date": "09-10-2016",
+		"location": {
+			"name": "Estadio Olímpico Metropolitano",
+			"latitude": "15.470094",
+			"longitude": "-88.006931"
+		}
+	},
+	{
+		"home": 3,
+		"away": 4,
+		"date": "09-10-2016",
+		"location": {
+			"name": "Independence Park",
+			"latitude": "18.001944",
+			"longitude": "-76.771667"
+		}
+	},
+	{
+		"home": 1,
+		"away": 3,
+		"date": "02-06-2016",
+		"location": {
+			"name": "Estadio Azteca",
+			"latitude": "19.302911",
+			"longitude": "-99.150442"
+		}
+	},
+	{
+		"home": 0,
+		"away": 1,
+		"date": "09-10-2016",
+		"location": {
+			"name": "Columbus Crew Stadium",
+			"latitude": "40.009444",
+			"longitude": "-82.991111"
+		}
+	},
+	{
+		"home": 4,
+		"away": 1,
+		"date": "10-15-2016",
+		"location": {
+			"name": "Estadio Nacional de Costa Rica",
+			"latitude": "9.936389",
+			"longitude": "-84.107778"
+		}
+	},
+	{
+		"home": 3,
+		"away": 2,
+		"date": "10-15-2016",
+		"location": {
+			"name": "Independence Park",
+			"latitude": "18.001944",
+			"longitude": "-76.771667"
+		}
+	},
+	{
+		"home": 1,
+		"away": 2,
+		"date": "09-06-2016",
+		"location": {
+			"name": "Estadio Azteca",
+			"latitude": "19.302911",
+			"longitude": "-99.150442"
+		}
+	},
+	{
+		"home": 5,
+		"away": 0,
+		"date": "10-15-2016",
+		"location": {
+			"name": "Estadio Rommel Fernández",
+			"latitude": "9.035833",
+			"longitude": "-79.469444"
+		}
+	}
+]
+
+
+
+

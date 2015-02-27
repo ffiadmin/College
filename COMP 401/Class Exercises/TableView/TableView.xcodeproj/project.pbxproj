@@ -16,6 +16,7 @@
 		8E9EE1F91A96B0E100854AFB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9EE1F81A96B0E100854AFB /* TableViewController.swift */; };
 		8E9EE1FD1A96BAD500854AFB /* FromTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9EE1FC1A96BAD500854AFB /* FromTable.swift */; };
 		8E9EE1FF1A983DF000854AFB /* ITable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9EE1FE1A983DF000854AFB /* ITable.swift */; };
+		8EDDA7091A9FF1A60071829F /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDDA7081A9FF1A60071829F /* Cell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		8E9EE1F81A96B0E100854AFB /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		8E9EE1FC1A96BAD500854AFB /* FromTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FromTable.swift; path = ../FromTable.swift; sourceTree = "<group>"; };
 		8E9EE1FE1A983DF000854AFB /* ITable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITable.swift; sourceTree = "<group>"; };
+		8EDDA7081A9FF1A60071829F /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				8E9EE1E11A96B03B00854AFB /* LaunchScreen.xib */,
 				8E9EE1D61A96B03B00854AFB /* Supporting Files */,
 				8E9EE1FE1A983DF000854AFB /* ITable.swift */,
+				8EDDA7081A9FF1A60071829F /* Cell.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				8E9EE1F91A96B0E100854AFB /* TableViewController.swift in Sources */,
 				8E9EE1FD1A96BAD500854AFB /* FromTable.swift in Sources */,
 				8E9EE1D91A96B03B00854AFB /* AppDelegate.swift in Sources */,
+				8EDDA7091A9FF1A60071829F /* Cell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +421,7 @@
 				8E9EE1F41A96B03C00854AFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E9EE1F51A96B03C00854AFB /* Build configuration list for PBXNativeTarget "TableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +430,7 @@
 				8E9EE1F71A96B03C00854AFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
