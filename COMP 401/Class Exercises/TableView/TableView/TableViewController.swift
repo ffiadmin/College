@@ -11,7 +11,7 @@ import UIKit
 class TableViewController: UITableViewController, ITable {
 
     let events = [ "Born", "Lived", "Died" ]
-    let dates = [ "07/08/1993", "Whenevs", "Yikes" ];
+    var dates = [ "06/03/1993", "Whenevs", "Yikes" ];
     let awesome = [ "Whoananzas", "Piers", "Starz fruitsz" ];
     var path = NSIndexPath()
     
@@ -73,6 +73,10 @@ class TableViewController: UITableViewController, ITable {
         return indexPath
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(path, animated: true)
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let child = segue.destinationViewController as FromTable
         child.Delegate = self
@@ -84,8 +88,13 @@ class TableViewController: UITableViewController, ITable {
         }
     }
     
-    func done(child: FromTable) {
+    func done(child: FromTable, date: String) {
+        NSLog(date)
+        dates[path.row] = date
         dismissViewControllerAnimated(true, completion: nil)
+        
+        let paths = [ path ]
+        tableView.reloadRowsAtIndexPaths(paths, withRowAnimation: UITableViewRowAnimation.Left)
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

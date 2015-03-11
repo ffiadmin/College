@@ -9,5 +9,5 @@
 import UIKit
 
 protocol ITable {
-   func done(child: FromTable)
+    func done(child: FromTable, date: String)
 }

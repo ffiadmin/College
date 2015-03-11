@@ -1,24 +1,18 @@
 //
-//  FromTable.swift
-//  TableView
+//  GreenVC.swift
+//  UnwindSegue
 //
-//  Created by Oliver Spryn on 2/19/15.
-//  Copyright (c) 2015 Oliver Spryn. All rights reserved.
+//  Created by Oliver Spryn on 3/10/15.
+//  Copyright (c) 2015 Spryn. All rights reserved.
 //
 
 import UIKit
 
-class FromTable: UIViewController {
+class GreenVC: UIViewController {
 
-    @IBOutlet weak var Picker: UIDatePicker!
-    @IBOutlet weak var Back: UIButton!
-    @IBOutlet weak var Label: UILabel!
-    var Delegate: ITable!
-    var Text = ""
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        Label.text = Text
+
         // Do any additional setup after loading the view.
     }
 
@@ -26,13 +20,8 @@ class FromTable: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
-    @IBAction func BackHandler(sender: UIButton) {
-        var formatter = NSDateFormatter()
-        formatter.dateFormat = "MM/dd/yyyy"
-        
-        Delegate.done(self, date: formatter.stringFromDate(Picker.date))
-    }
     /*
     // MARK: - Navigation
 

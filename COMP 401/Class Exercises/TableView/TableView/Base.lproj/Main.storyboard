@@ -36,7 +36,7 @@
                                 <connections>
                                     <outlet property="DetailLabel" destination="n4t-39-wgO" id="bFz-cJ-0hS"/>
                                     <outlet property="EventLabel" destination="GrC-lL-9Ge" id="0Q7-gY-4DW"/>
-                                    <segue destination="LwO-8J-gEe" kind="show" id="lxl-jm-iUn"/>
+                                    <segue destination="LwO-8J-gEe" kind="modal" id="lxl-jm-iUn"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -91,7 +91,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="Back:" destination="LwO-8J-gEe" eventType="touchUpInside" id="gux-vh-JZE"/>
+                                    <action selector="BackHandler:" destination="LwO-8J-gEe" eventType="touchUpInside" id="xlt-LJ-c1t"/>
                                 </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ExM-aP-PeV">
