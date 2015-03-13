@@ -34,6 +34,9 @@
 		8EC280FF1A999EAD00D54449 /* TeamRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC280F21A999EAD00D54449 /* TeamRepository.swift */; };
 		8EC281041A99A76C00D54449 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC281031A99A76C00D54449 /* TabController.swift */; };
 		8EC281061A9A3E5500D54449 /* CountdownController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC281051A9A3E5500D54449 /* CountdownController.swift */; };
+		8EFE1AF21AB29F09002C58DB /* TeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE1AF11AB29F09002C58DB /* TeamController.swift */; };
+		8EFE1AF61AB2A0D3002C58DB /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE1AF51AB2A0D3002C58DB /* TeamCell.swift */; };
+		8EFE1AF81AB2AE84002C58DB /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE1AF71AB2AE83002C58DB /* WebController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		8EC280F21A999EAD00D54449 /* TeamRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamRepository.swift; sourceTree = "<group>"; };
 		8EC281031A99A76C00D54449 /* TabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		8EC281051A9A3E5500D54449 /* CountdownController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownController.swift; sourceTree = "<group>"; };
+		8EFE1AF11AB29F09002C58DB /* TeamController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamController.swift; sourceTree = "<group>"; };
+		8EFE1AF51AB2A0D3002C58DB /* TeamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
+		8EFE1AF71AB2AE83002C58DB /* WebController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,11 +228,14 @@
 		8EC281021A99A73A00D54449 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8EFE1AF51AB2A0D3002C58DB /* TeamCell.swift */,
 				8EC281031A99A76C00D54449 /* TabController.swift */,
 				8EC281051A9A3E5500D54449 /* CountdownController.swift */,
 				8E2A3B8F1A9C6C1400EE2231 /* ScheduleController.swift */,
 				8E2A3B911A9C701A00EE2231 /* ScheduleDetailController.swift */,
 				8E2A3B951A9C745B00EE2231 /* ScheduleCell.swift */,
+				8EFE1AF11AB29F09002C58DB /* TeamController.swift */,
+				8EFE1AF71AB2AE83002C58DB /* WebController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -344,6 +353,7 @@
 			files = (
 				8EC280FE1A999EAD00D54449 /* Team.swift in Sources */,
 				8EC281041A99A76C00D54449 /* TabController.swift in Sources */,
+				8EFE1AF81AB2AE84002C58DB /* WebController.swift in Sources */,
 				8E2A3B901A9C6C1400EE2231 /* ScheduleController.swift in Sources */,
 				8EC280C61A999CF000D54449 /* ViewController.swift in Sources */,
 				8EC280F41A999EAD00D54449 /* GameRepository.swift in Sources */,
@@ -351,6 +361,8 @@
 				8E2A3B921A9C701A00EE2231 /* ScheduleDetailController.swift in Sources */,
 				8EC280F51A999EAD00D54449 /* Location.swift in Sources */,
 				8EC280F31A999EAD00D54449 /* Game.swift in Sources */,
+				8EFE1AF21AB29F09002C58DB /* TeamController.swift in Sources */,
+				8EFE1AF61AB2A0D3002C58DB /* TeamCell.swift in Sources */,
 				8EC280FF1A999EAD00D54449 /* TeamRepository.swift in Sources */,
 				8E2A3B961A9C745B00EE2231 /* ScheduleCell.swift in Sources */,
 				8EC280C41A999CF000D54449 /* AppDelegate.swift in Sources */,

@@ -10,13 +10,115 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project1/ScheduleController.swift"
-            timestampString = "446460312.792568"
+            timestampString = "447923903.097013"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "prepareForSegue(_:sender:)"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "tableView(_:willSelectRowAtIndexPath:)"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project1/ScheduleCell.swift"
+            timestampString = "447921308.987149"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ScheduleCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Project1.ScheduleCell.Flag.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UIImageView&gt;"
+                  moduleName = "Project1"
+                  urlString = "file:///Users/spryno724/Documents/College/COMP%20401/Project1/Project1/ScheduleCell.swift"
+                  timestampString = "447919652.439015"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Project1.ScheduleCell.Flag.materializeForSet : weak Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UIImageView&gt;"
+                  moduleName = "Project1"
+                  urlString = "file:///Users/spryno724/Documents/College/COMP%20401/Project1/Project1/ScheduleCell.swift"
+                  timestampString = "447919652.439215"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Project1.ScheduleCell.init (Project1.ScheduleCell.Type)(style : C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; Project1.ScheduleCell"
+                  moduleName = "Project1"
+                  urlString = "file:///Users/spryno724/Documents/College/COMP%20401/Project1/Project1/ScheduleCell.swift"
+                  timestampString = "447919652.439404"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "54">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Project1.ScheduleCell.init (Project1.ScheduleCell.Type)(frame : C.CGRect) -&gt; Project1.ScheduleCell"
+                  moduleName = "Project1"
+                  urlString = "file:///Users/spryno724/Documents/College/COMP%20401/Project1/Project1/ScheduleCell.swift"
+                  timestampString = "447919652.439649"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "43">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Project1.ScheduleCell.init (Project1.ScheduleCell.Type)() -&gt; Project1.ScheduleCell"
+                  moduleName = "Project1"
+                  urlString = "file:///Users/spryno724/Documents/College/COMP%20401/Project1/Project1/ScheduleCell.swift"
+                  timestampString = "447919652.439847"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Project1.ScheduleCell.init (Project1.ScheduleCell.Type)(coder : ObjectiveC.NSCoder) -&gt; Project1.ScheduleCell"
+                  moduleName = "Project1"
+                  urlString = "file:///Users/spryno724/Documents/College/COMP%20401/Project1/Project1/ScheduleCell.swift"
+                  timestampString = "447919652.440127"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "27">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -9,16 +9,24 @@
 import UIKit
 
 class ScheduleCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var FlagAway: UIImageView!
+    @IBOutlet weak var FlagHome: UIImageView!
+    @IBOutlet weak var LabelAway: UILabel!
+    @IBOutlet weak var LabelHome: UILabel!
+    @IBOutlet weak var LabelTime: UILabel!
+    
+    var ImageAway:String!
+    var ImageHome:String!
+    var TextAway:String!
+    var TextHome:String!
+    var Time:String!
+    
+    func apply() {
+        FlagAway.image = UIImage(named: ImageAway)
+        FlagHome.image = UIImage(named: ImageHome)
+        
+        LabelAway.text = TextAway
+        LabelHome.text = TextHome
+        LabelTime.text = Time
     }
-
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }
