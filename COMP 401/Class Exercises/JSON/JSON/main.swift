@@ -10,5 +10,8 @@ import Foundation
 
 println("Hello, World!")
 
-let str = NSString(contentsOfURL: NSURL(string: "http://api.kivaws.org/v1/loans/newest.json")!, encoding: NSUTF8StringEncoding, error: nil);
-NSLog(str!)
+//let str = NSString(contentsOfURL: NSURL(string: "http://api.kivaws.org/v1/loans/newest.json")!, encoding: NSUTF8StringEncoding, error: nil);
+//NSLog(str!)
+
+var d = Downloader()
+d.run("http://api.kivaws.org/v1/loans/newest.json")
