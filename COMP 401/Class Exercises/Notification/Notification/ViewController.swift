@@ -9,16 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var Button: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let center = NSNotificationCenter.defaultCenter()
-        center.addObserver(self, selector: "Listener:", name: nil, object: nil)
+        center.addObserver(self, selector: "Rotateo:", name: "UIWindowDidRotateNotification", object: nil)
+        center.addObserver(self, selector: "Tappio:", name: "ButtonPressed", object: nil)
+    }
+    
+    @IBAction func ButtonPressed(sender: UIButton) {
+        let center = NSNotificationCenter.defaultCenter()
+        center.postNotificationName("ButtonPressed", object: Button)
     }
 
-    func Listener(note: NSNotification) {
-        println(note.name)
+    func Rotateo(note: NSNotification) {
+        NSLog("Rotated!")
+    }
+    
+    func Tappio(note: NSNotification) {
+        NSLog("Button's been pressed!")
     }
     
     override func viewWillDisappear(animated: Bool) {
