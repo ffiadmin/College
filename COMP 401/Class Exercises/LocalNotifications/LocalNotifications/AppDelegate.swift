@@ -16,12 +16,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
         let alert = UIAlertView(title: notification.alertAction, message: notification.alertBody, delegate: self, cancelButtonTitle: "Dellinger")
-        
         alert.show()
+        
+        let state = application.applicationState
+        
+        if state == UIApplicationState.Active {
+            self.window?.rootViewController!.view.backgroundColor = UIColor.greenColor()
+        } else {
+            self.window?.rootViewController!.view.backgroundColor = UIColor.redColor()
+        }
     }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Alert, categories: nil))
+        
+        if launchOptions?.indexForKey(UIApplicationLaunchOptionsLocalNotificationKey) != nil {
+            self.window?.rootViewController!.view.backgroundColor = UIColor.blueColor()
+        }
         
         return true
     }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E195E581ADCCE2300E1546F /* AsyncRPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E195E571ADCCE2300E1546F /* AsyncRPC.swift */; };
+		8E195E5A1ADCFE4500E1546F /* FetchZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E195E591ADCFE4500E1546F /* FetchZIP.swift */; };
 		8E6BB2661ACE09BA00CFD0C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6BB2651ACE09BA00CFD0C0 /* AppDelegate.swift */; };
 		8E6BB2691ACE09BA00CFD0C0 /* Project2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E6BB2671ACE09BA00CFD0C0 /* Project2.xcdatamodeld */; };
 		8E6BB26B1ACE09BA00CFD0C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6BB26A1ACE09BA00CFD0C0 /* ViewController.swift */; };
@@ -15,6 +17,10 @@
 		8E6BB2731ACE09BA00CFD0C0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E6BB2711ACE09BA00CFD0C0 /* LaunchScreen.xib */; };
 		8E6BB27F1ACE09BA00CFD0C0 /* Project2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6BB27E1ACE09BA00CFD0C0 /* Project2Tests.swift */; };
 		8E6BB28A1ACE2C7500CFD0C0 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6BB2891ACE2C7500CFD0C0 /* HomeController.swift */; };
+		8E7E00001ADF42D900FB77E3 /* ForecastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7EFFFF1ADF42D900FB77E3 /* ForecastController.swift */; };
+		8E7EFFFE1ADF3E3000FB77E3 /* FetchWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7EFFFD1ADF3E2F00FB77E3 /* FetchWeather.swift */; };
+		8EE56F831ADF590B009C6AD7 /* DocumentFileIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE56F821ADF590B009C6AD7 /* DocumentFileIO.swift */; };
+		8EE56F881AE06503009C6AD7 /* TimedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE56F871AE06503009C6AD7 /* TimedController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E195E571ADCCE2300E1546F /* AsyncRPC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncRPC.swift; sourceTree = "<group>"; };
+		8E195E591ADCFE4500E1546F /* FetchZIP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchZIP.swift; sourceTree = "<group>"; };
 		8E6BB2601ACE09BA00CFD0C0 /* Project2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E6BB2641ACE09BA00CFD0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E6BB2651ACE09BA00CFD0C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +48,10 @@
 		8E6BB27D1ACE09BA00CFD0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E6BB27E1ACE09BA00CFD0C0 /* Project2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project2Tests.swift; sourceTree = "<group>"; };
 		8E6BB2891ACE2C7500CFD0C0 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		8E7EFFFD1ADF3E2F00FB77E3 /* FetchWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchWeather.swift; sourceTree = "<group>"; };
+		8E7EFFFF1ADF42D900FB77E3 /* ForecastController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastController.swift; sourceTree = "<group>"; };
+		8EE56F821ADF590B009C6AD7 /* DocumentFileIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentFileIO.swift; sourceTree = "<group>"; };
+		8EE56F871AE06503009C6AD7 /* TimedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimedController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E195E561ADCCDFD00E1546F /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				8E195E571ADCCE2300E1546F /* AsyncRPC.swift */,
+				8E195E591ADCFE4500E1546F /* FetchZIP.swift */,
+				8E7EFFFD1ADF3E2F00FB77E3 /* FetchWeather.swift */,
+				8EE56F821ADF590B009C6AD7 /* DocumentFileIO.swift */,
+			);
+			name = Business;
+			sourceTree = "<group>";
+		};
 		8E6BB2571ACE09BA00CFD0C0 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +104,7 @@
 		8E6BB2621ACE09BA00CFD0C0 /* Project2 */ = {
 			isa = PBXGroup;
 			children = (
+				8E195E561ADCCDFD00E1546F /* Business */,
 				8E6BB2881ACE2BF600CFD0C0 /* Controller */,
 				8E6BB2651ACE09BA00CFD0C0 /* AppDelegate.swift */,
 				8E6BB26A1ACE09BA00CFD0C0 /* ViewController.swift */,
@@ -122,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				8E6BB2891ACE2C7500CFD0C0 /* HomeController.swift */,
+				8E7EFFFF1ADF42D900FB77E3 /* ForecastController.swift */,
+				8EE56F871AE06503009C6AD7 /* TimedController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -228,8 +254,14 @@
 			files = (
 				8E6BB28A1ACE2C7500CFD0C0 /* HomeController.swift in Sources */,
 				8E6BB26B1ACE09BA00CFD0C0 /* ViewController.swift in Sources */,
+				8E195E5A1ADCFE4500E1546F /* FetchZIP.swift in Sources */,
+				8E7E00001ADF42D900FB77E3 /* ForecastController.swift in Sources */,
+				8E7EFFFE1ADF3E3000FB77E3 /* FetchWeather.swift in Sources */,
+				8EE56F881AE06503009C6AD7 /* TimedController.swift in Sources */,
 				8E6BB2691ACE09BA00CFD0C0 /* Project2.xcdatamodeld in Sources */,
+				8E195E581ADCCE2300E1546F /* AsyncRPC.swift in Sources */,
 				8E6BB2661ACE09BA00CFD0C0 /* AppDelegate.swift in Sources */,
+				8EE56F831ADF590B009C6AD7 /* DocumentFileIO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +455,7 @@
 				8E6BB2841ACE09BA00CFD0C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8E6BB2851ACE09BA00CFD0C0 /* Build configuration list for PBXNativeTarget "Project2Tests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +464,7 @@
 				8E6BB2871ACE09BA00CFD0C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
