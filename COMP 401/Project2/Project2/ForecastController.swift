@@ -6,12 +6,14 @@
 //  Copyright (c) 2015 Oliver Spryn. All rights reserved.
 //
 
+import AVFoundation
 import UIKit
 
 class ForecastController: UIViewController, UITableViewDelegate {
     @IBOutlet weak var Conditions: UILabel!
     var Delegate: ZIPData!
     var Load: FetchWeather!
+    var Music: AVAudioPlayer!
     var Observed = false
     var Operations: NSOperationQueue!
     @IBOutlet weak var Summary: UILabel!
@@ -79,6 +81,10 @@ class ForecastController: UIViewController, UITableViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    //Start the waiting music
+        //Music = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: "waiting.wav"), error: nil)
+        //Music.play()
         
     //Use this to configure the table contents
         Table.delegate = self

@@ -7,11 +7,16 @@
 //
 
 import CoreLocation
+import CoreMotion
 import UIKit
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
-    var Location: CLLocationManager!
     @IBOutlet weak var Output: UILabel!
+    
+    /*
+    //Location
+    
+    var Location: CLLocationManager!
     
     func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         Location.desiredAccuracy = kCLLocationAccuracyBest
@@ -35,5 +40,27 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         Location = CLLocationManager()
         Location.delegate = self
         Location.requestAlwaysAuthorization()
+    }*/
+    
+    var Motion: CMMotionManager!
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        Motion.stopDeviceMotionUpdates()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        var ops = NSOperationQueue.mainQueue()
+        
+        Motion = CMMotionManager()
+        Motion.startDeviceMotionUpdates()
+        Motion.startAccelerometerUpdatesToQueue(ops, withHandler: {
+            (data: CMAccelerometerData!, error: NSError!) in
+            
+            self.Output.layer.position.x = self.Output.layer.position.x + CGFloat(data.acceleration.x)
+            self.Output.layer.position.y = self.Output.layer.position.y - CGFloat(data.acceleration.y)
+        })
     }
 }
