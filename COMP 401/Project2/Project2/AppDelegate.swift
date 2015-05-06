@@ -13,19 +13,8 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    
-    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
-        let alert = UIAlertView(title: notification.alertAction, message: notification.alertBody, delegate: self, cancelButtonTitle: "OK")
-        alert.show()
-    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: UIUserNotificationType.Alert, categories: nil))
-        
-        if launchOptions?.indexForKey(UIApplicationLaunchOptionsLocalNotificationKey) != nil {
-            self.window?.rootViewController!.view.backgroundColor = UIColor.blueColor()
-        }
-        
         return true
     }
 

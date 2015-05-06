@@ -11,12 +11,14 @@ import UIKit
 class Day {
     var Date: NSDate!
     var Forecast: String!
+    var Icon: String!
     var TempMax: Float!
     var TempMin: Float!
 }
 
 class Now: NSObject {
     var Forecast: String!
+    var Icon: String!
     var Temperature: Float!
 }
 
@@ -57,8 +59,20 @@ class FetchWeather: AsyncRPC {
         let current: Dictionary<String, AnyObject> = JSON["currently"] as! Dictionary<String, AnyObject>
         
     //Now
+        var supportedConditions = [
+            "clear-day", "cloudy-day", "cloudy", "fog", "partly-cloudy-day", "partly-cloudy-night",
+            "rain", "sleet", "snow", "wind"
+        ]
+        
+        var condition = current["icon"] as! String
         Current.Forecast = current["summary"] as! String
         Current.Temperature = current["temperature"] as! Float
+        
+        if(contains(supportedConditions, condition)) {
+            Current.Icon = "\(condition).png";
+        } else {
+            Current.Icon = "other.png"
+        }
         
     //Weekly forecast
         if Type == FetchType.Forecast {
@@ -68,11 +82,19 @@ class FetchWeather: AsyncRPC {
             var day: Day! = nil
             
             for var i = 0; i < cnt; ++i {
+                condition = days[i]["icon"] as! String
+                
                 day = Day()
                 day.Date     = NSDate(timeIntervalSince1970: NSTimeInterval(days[i]["time"] as! Int))
                 day.Forecast = days[i]["summary"] as! String
                 day.TempMax  = days[i]["temperatureMax"] as! Float
                 day.TempMin  = days[i]["temperatureMin"] as! Float
+                
+                if(contains(supportedConditions, condition)) {
+                    day.Icon = "\(condition).png";
+                } else {
+                    day.Icon = "other.png"
+                }
                 
                 Days.append(day)
             }

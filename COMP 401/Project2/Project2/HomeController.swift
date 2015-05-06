@@ -6,13 +6,15 @@
 //  Copyright (c) 2015 Oliver Spryn. All rights reserved.
 //
 
+import AVFoundation
 import MapKit
 import UIKit
 
-class HomeController: UIViewController, UITextFieldDelegate {
+class HomeController: UIViewController, IWeatherProtocol, AVAudioPlayerDelegate, UITextFieldDelegate {
     @IBOutlet weak var Button: UIButton!
     @IBOutlet weak var Input: UITextField!
     @IBOutlet weak var Map: MKMapView!
+    var Music: AVAudioPlayer!
     var Operations: NSOperationQueue!
     var ZIP: ZIPData!
     let ZIPLength = 5
@@ -37,7 +39,7 @@ class HomeController: UIViewController, UITextFieldDelegate {
         let bar = dest.viewControllers as! [UIViewController]
         var forecast = bar[0] as! ForecastController
         
-        forecast.Delegate = self.ZIP
+        forecast.ZIP = self.ZIP
     }
     
     //StackOverflow [1]
@@ -74,8 +76,21 @@ class HomeController: UIViewController, UITextFieldDelegate {
         return newLength <= ZIPLength
     }
     
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
+        Music.stop()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    //Start the waiting music
+        let path = NSBundle.mainBundle().pathForResource("waiting", ofType:"mp3")
+        let fileURL = NSURL(fileURLWithPath: path!)
+        Music = AVAudioPlayer(contentsOfURL: fileURL, error: nil)
+        Music.prepareToPlay()
+        Music.delegate = self
+        Music.play()
         
     //Let the view controller handle the maximum length of the text input
         Input.delegate = self

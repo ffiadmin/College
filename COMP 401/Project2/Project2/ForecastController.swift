@@ -6,19 +6,17 @@
 //  Copyright (c) 2015 Oliver Spryn. All rights reserved.
 //
 
-import AVFoundation
 import UIKit
 
-class ForecastController: UIViewController, UITableViewDelegate {
-    @IBOutlet weak var Conditions: UILabel!
-    var Delegate: ZIPData!
+class ForecastController: UIViewController, IWeatherProtocol, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var Conditions: UIImageView!
     var Load: FetchWeather!
-    var Music: AVAudioPlayer!
     var Observed = false
     var Operations: NSOperationQueue!
     @IBOutlet weak var Summary: UILabel!
     @IBOutlet weak var Table: UITableView!
     @IBOutlet weak var Temperature: UILabel!
+    var ZIP: ZIPData!
     
     deinit {
         Load.removeObserver(self, forKeyPath: "Current")
@@ -30,19 +28,17 @@ class ForecastController: UIViewController, UITableViewDelegate {
             Observed = false
         }
         
-        Load = FetchWeather(latitude: Delegate.Latitude, longitude: Delegate.Longitude)
+        Load = FetchWeather(latitude: ZIP.Latitude, longitude: ZIP.Longitude)
         Load.completionBlock = {
-        //Current conditions
-            var cond  = self.Load.Current.Forecast
-            var start = advance(cond.startIndex, 0)
-            
-            self.Conditions.text = String(cond[start])
-            self.Summary.text = self.Load.Current.Forecast
-            self.Temperature.text = String((self.Load.Current.Temperature.description as NSString).intValue) + " F"
-            
-        //The week ahead
-            //Table.beginUpdates()
-            //Table.insertR
+            dispatch_async(dispatch_get_main_queue(), {
+            //Current conditions
+                self.Conditions.image = UIImage(named: self.Load.Current.Icon)
+                self.Summary.text = self.Load.Current.Forecast
+                self.Temperature.text = String((self.Load.Current.Temperature.description as NSString).intValue) + " F"
+                
+            //The week ahead
+                self.Table.reloadData()
+            });
         }
         
         if !Observed {
@@ -54,40 +50,39 @@ class ForecastController: UIViewController, UITableViewDelegate {
     }
     
     override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
-        var cond  = self.Load.Current.Forecast
-        var start = advance(cond.startIndex, 0)
-        
-        self.Conditions.text = String(cond[start])
+        self.Conditions.image = UIImage(named: self.Load.Current.Icon)
         self.Summary.text = self.Load.Current.Forecast
         self.Temperature.text = String((self.Load.Current.Temperature.description as NSString).intValue) + " F"
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let dest = segue.destinationViewController as! TimedController
-        dest.Weather = Load.Current
-        dest.ZIP = Delegate
-    }
-    
     func queryAPI() {
         fetchForecast()
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var dateFormat = NSDateFormatter()
+        dateFormat.dateFormat = "EEE"
         
-        let note = UILocalNotification()
-        note.fireDate = NSDate(timeIntervalSinceNow: 1)
-        note.alertAction = "NOTICE"
-        note.alertBody = "The forecast was updated"
+        var cell = Table.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! ForecastDay
+        cell.Day.text = dateFormat.stringFromDate(Load.Days[indexPath.row].Date)
+        cell.High.text = String(stringInterpolationSegment: Int(Load.Days[indexPath.row].TempMax)) + " F"
+        cell.Icon.image = UIImage(named: Load.Days[indexPath.row].Icon)
+        cell.Low.text = String(stringInterpolationSegment: Int(Load.Days[indexPath.row].TempMin)) + " F"
         
-        UIApplication.sharedApplication().scheduleLocalNotification(note)
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let alert = UIAlertView(title: "Summary", message: Load.Days[indexPath.row].Forecast, delegate: self, cancelButtonTitle: "OK")
+        alert.show()
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Load.Days.count
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    //Start the waiting music
-        //Music = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: "waiting.wav"), error: nil)
-        //Music.play()
-        
-    //Use this to configure the table contents
-        Table.delegate = self
         
     //Start the API query loop
         NSTimer.scheduledTimerWithTimeInterval(60.0, target: self, selector: "queryAPI", userInfo: nil, repeats: true)
@@ -97,5 +92,9 @@ class ForecastController: UIViewController, UITableViewDelegate {
         Operations.name = "Forecast Fetcher"
         
         fetchForecast()
+        
+    //Register this class as the one to provide the tavble with information
+        Table.dataSource = self
+        Table.delegate = self
     }
 }
